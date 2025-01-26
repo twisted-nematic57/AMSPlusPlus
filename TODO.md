@@ -7,7 +7,7 @@
    - [x] log()
    - [x] root()
    - [x] string()
-   - [ ] round()
+   - [x] dim()
    - [x] exact()
    - [x] Archive
    - [x] Unarchiv
