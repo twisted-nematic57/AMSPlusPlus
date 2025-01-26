@@ -4,15 +4,15 @@
  - [ ] 4: config CustomGraph (incl. pi-scaled xscl)
  - [ ] 5: custom zoom box - aspect ratio maintaining
  - [x] 6: Quick Insert
-   - [x] 1: log()
-   - [x] 2: root()
-   - [x] 3: string()
-   - [x] 4: dim()
-   - [x] 5: exact()
-   - [x] 6: Archive
-   - [x] 7: Unarchiv
-   - [x] 8: DelVar 
-   - [x] 9: main\flib("")
+   - [x] log()
+   - [x] root()
+   - [x] string()
+   - [ ] round()
+   - [x] exact()
+   - [x] Archive
+   - [x] Unarchiv
+   - [x] DelVar 
+   - [x] main\flib("")
  - [ ] 7: Quicksave expression - Formula1
  - [ ] 8: Formula1
  - [ ] 9: Round ans(1) - numbers mean # of digits to round to
