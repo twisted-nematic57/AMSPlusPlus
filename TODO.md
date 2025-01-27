@@ -1,8 +1,12 @@
  - [X] 1: Set xscl,yscl to 0 and DispG 
  - [ ] 2: Draw tickmarks on graph & show
+    - [ ] Extend to 3D?
  - [ ] 3: CustomGraph: tickmarks, shading, grayscale
+    - [ ] Extend to 3D?
  - [ ] 4: config CustomGraph (incl. pi-scaled xscl)
+    - [ ] Extend to 3D?
  - [X] 5: custom zoom box - aspect ratio maintaining
+    - [ ] Extend to 3D?
  - [x] 6: Quick Insert
    - [x] log()
    - [x] root()
@@ -16,3 +20,4 @@
  - [ ] 7: Quicksave expression - Formula1
  - [ ] 8: Formula1
  - [ ] 9: Round ans(1) - numbers mean # of digits to round to
+   - [ ] Hit Enter automatically after paste?
