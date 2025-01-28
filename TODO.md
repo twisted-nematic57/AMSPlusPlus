@@ -1,3 +1,5 @@
+**kbdprgms**
+
  - [X] 1: Set xscl,yscl to 0 and DispG 
  - [ ] 2: Draw tickmarks on graph & show
  - [ ] 3: CustomGraph: tickmarks, shading, grayscale
