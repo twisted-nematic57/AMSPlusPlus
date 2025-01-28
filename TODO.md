@@ -4,7 +4,7 @@
  - [ ] 2: Draw tickmarks on graph & show
  - [ ] 3: CustomGraph: tickmarks, shading, grayscale
  - [ ] 4: config CustomGraph (incl. pi-scaled xscl)
- - [X] 5: custom zoom box - aspect ratio maintaining
+ - [ ] 5: custom zoom box - aspect ratio maintaining
  - [x] 6: Quick Insert
    - [x] log()
    - [x] root()
