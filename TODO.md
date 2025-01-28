@@ -15,7 +15,7 @@
    - [x] Unarchiv
    - [x] DelVar 
    - [x] main\flib("")
- - [ ] 7: Quicksave expression - Formula1
- - [ ] 8: Formula1
- - [ ] 9: Round ans(1) - numbers mean # of digits to round to
+ - [ ] 7: Round ans(1) - numbers mean # of digits to round to
    - [ ] Hit Enter automatically after paste?
+ - [ ] 8: Formula1
+ - [ ] 9: Miscellaneous Menu
