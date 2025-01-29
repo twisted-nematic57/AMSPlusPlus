@@ -5,6 +5,7 @@
  - [ ] 3: CustomGraph: tickmarks, shading, grayscale
  - [ ] 4: config CustomGraph (incl. pi-scaled xscl)
  - [ ] 5: custom zoom box - aspect ratio maintaining
+   - [ ] If in 3D mode, make it easy to rotate the graph while not rotating the camera
  - [x] 6: Quick Insert
    - [x] log()
    - [x] root()
