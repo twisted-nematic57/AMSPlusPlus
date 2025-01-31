@@ -1,22 +1,23 @@
 **kbdprgms**
 
- - [X] 1: Set xscl,yscl to 0 and DispG 
- - [ ] 2: Draw tickmarks on graph & show
- - [ ] 3: CustomGraph: tickmarks, shading, grayscale
- - [ ] 4: config CustomGraph (incl. pi-scaled xscl)
+ - [ ] 1: Draw tickmarks, shading, grayscale
+ - [ ] 2: Configure Graph
+ - [ ] 3: Pretty Print Editor (MathPrint reimplementation, C)
+ - [ ] 4: Refresh Home Screen (scroll through the whole thing to make it faster, probably ASM)
  - [ ] 5: custom zoom box - aspect ratio maintaining
    - [ ] If in 3D mode, make it easy to rotate the graph while not rotating the camera
  - [x] 6: Quick Insert
-   - [x] log()
-   - [x] root()
-   - [x] string()
-   - [x] dim()
-   - [x] exact()
+   - [x] log(
+   - [x] root(
+   - [x] string(
+   - [x] dim(
+   - [x] exact(
+   - [ ] moar????
    - [x] Archive
    - [x] Unarchiv
    - [x] DelVar 
    - [x] main\flib("")
  - [ ] 7: Round ans(1) - numbers mean # of digits to round to
    - [ ] Hit Enter automatically after paste?
- - [ ] 8: Formula1
- - [ ] 9: Miscellaneous Menu
+ - [ ] 8: Formula1 (save formulas, BASIC)
+ - [ ] 9: Quicksave Formula for Formula1
