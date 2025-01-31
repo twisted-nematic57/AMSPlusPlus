@@ -12,10 +12,13 @@
    - [x] string(
    - [x] dim(
    - [x] exact(
-   - [ ] moar????
    - [x] Archive
    - [x] Unarchiv
-   - [x] DelVar 
+   - [x] DelVar
+   - [ ] If
+   - [ ] Then
+   - [ ] Else
+   - [ ] End
    - [x] main\flib("")
  - [ ] 7: Quicksave Formula for Formula1
  - [ ] 8: Formula1 (save formulas, BASIC)
