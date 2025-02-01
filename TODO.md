@@ -1,8 +1,8 @@
 **kbdprgms**
 
- - [ ] 1: Draw tickmarks, shading, grayscale
- - [ ] 2: Configure Graph
- - [ ] 3: Pretty Print Editor (MathPrint reimplementation, C)
+ - [ ] 1: Draw tickmarks, shading, grayscale, implicit, x= equations
+ - [ ] 2: Configure Graph + Edit Graph Equations + Styling
+ - [ ] 3: 
  - [ ] 4: Refresh Home Screen (scroll through the whole thing to make it faster, probably ASM)
  - [ ] 5: custom zoom box - aspect ratio maintaining
    - [ ] If in 3D mode, make it easy to rotate the graph while not rotating the camera
@@ -15,10 +15,10 @@
    - [x] Archive
    - [x] Unarchiv
    - [x] DelVar
-   - [ ] If
-   - [ ] Then
-   - [ ] Else
-   - [ ] End
+   - [x] If
+   - [x] Then
+   - [x] Else
+   - [x] End
    - [x] main\flib("")
  - [ ] 7: Quicksave Formula for Formula1
  - [ ] 8: Formula1 (save formulas, BASIC)
