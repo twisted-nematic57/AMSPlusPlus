@@ -16,6 +16,9 @@
    - [x] Unarchiv
    - [x] DelVar
    - [x] If
+   - [X] For
+   - [X] While
+   - [X] Try
    - [x] Then
    - [x] Else
    - [x] End
