@@ -24,6 +24,3 @@
  - [ ] 8: Formula1 (save formulas, BASIC)
  - [ ] 9: Round ans(1) - numbers mean # of digits to round to
    - [ ] Hit Enter automatically after paste?
-
-# functions
- - [ ] bsolve: "brute-force solve" wrapper around nSolve() that looks for all possible decimal solns
