@@ -26,5 +26,4 @@
    - [ ] Hit Enter automatically after paste?
 
 # functions
- - [ ] exactify: prepend 'exact(' and append ')' to all decimal numbers
  - [ ] bsolve: "brute-force solve" wrapper around nSolve() that looks for all possible decimal solns
