@@ -25,7 +25,7 @@
    - [X] Then
    - [X] Else
    - [X] End
-   - [ ] misc\flib("")
+   - [X] misc\flib("")
  - [ ] 7: Quicksave Text for DeepRCL
  - [ ] 8: DeepRCL (save any text and RCL it quickly, BASIC)
  - [ ] 9: misc programs
