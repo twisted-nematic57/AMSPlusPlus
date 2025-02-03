@@ -13,6 +13,7 @@
    - [X] log(
    - [X] root(
    - [X] string(
+   - [X] expr(
    - [X] dim(
    - [X] exact(
    - [X] Archive
