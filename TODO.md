@@ -10,6 +10,7 @@
      - [X] Add a status bar message showing current angle value
      - [X] Let the user type in a different value?
      - [ ] Add a "prerender" feature that renders pics of the graph at 20 degree steps automatically - default is realtime
+     - [ ] Add more exit keys - CLEAR, HOME(also does DispHome)
  - [X] 6: Quick Insert
    - [X] log(
    - [X] root(
