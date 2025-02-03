@@ -33,6 +33,7 @@
    - [ ] "manual" Git-like snapshot manager
    - [ ] RAM "defragmenter" (?)
    - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
+     - [ ] add compression support via flib
 
 # misc
  - [ ] sendkey: press a key from a BASIC program
