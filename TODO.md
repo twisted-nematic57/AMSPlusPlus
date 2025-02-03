@@ -7,7 +7,7 @@
  - [ ] 4: ...
  - [X] 5: custom zoom box - aspect ratio maintaining
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
-     - [ ] Add a status bar message showing current angle value
+     - [X] Add a status bar message showing current angle value
      - [ ] Let the user type in a different value?
  - [X] 6: Quick Insert
    - [X] log(
