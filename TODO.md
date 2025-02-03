@@ -8,7 +8,8 @@
  - [X] 5: custom zoom box - aspect ratio maintaining
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
      - [X] Add a status bar message showing current angle value
-     - [ ] Let the user type in a different value?
+     - [X] Let the user type in a different value?
+     - [ ] Add a "prerender" feature that renders pics of the graph at 20 degree steps automatically - default is realtime
  - [X] 6: Quick Insert
    - [X] log(
    - [X] root(
