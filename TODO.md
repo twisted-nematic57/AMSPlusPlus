@@ -34,5 +34,5 @@
  - [ ] sendkey: press a key from a BASIC program
  - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
- - [ ] Battery Cycle Tracker w/ datetime - perhaps to a "data" var?
+ - [ ] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
  - [ ] UltimateSL: ultimate status line modifier, supporting BUSY/PAUSE/\[cleared\] and status bars
