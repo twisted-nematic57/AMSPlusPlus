@@ -16,7 +16,6 @@
    - [X] string(
    - [X] expr(
    - [X] dim(
-   - [ ] round(
    - [X] exact(
    - [X] Archive
    - [X] Unarchiv
@@ -43,4 +42,5 @@
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
  - [ ] UltimateSL: ultimate status line modifier, supporting BUSY/PAUSE/\[cleared\] and status bars
  - [ ] CycleGen, the animation software
+   - [X] fix undefined maxsteps w/fillmem issue
    - [ ] update/modernize
