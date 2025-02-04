@@ -1,15 +1,17 @@
 # kbdprgms
 
  - [ ] 1: Draw tickmarks, shading, grayscale, implicit, x= equations
- - [ ] 2: Configure Graph + Edit Graph Equations + Styling
+ - [ ] 2: Configure Graph + Styling
+   - [ ] user stores x-graphs as x1-99, implicits as imp1-99
  - [ ] 3: Round ans(1) - numbers mean # of digits to round to
    - [X] Hit Enter automatically after paste?
- - [ ] 4: ...
+ - [ ] 4: "manual" Git-like snapshot manager
  - [X] 5: custom zoom box - aspect ratio maintaining
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
      - [X] Add a status bar message showing current angle value
      - [X] Let the user type in a different value?
      - [X] Add more exit keys - CLEAR, HOME(also does DispHome)
+   - [ ] fully document code
  - [X] 6: Quick Insert
    - [X] log(
    - [X] root(
@@ -31,9 +33,10 @@
  - [ ] 7: Quicksave Text for DeepRCL
  - [ ] 8: DeepRCL (save any text and RCL it quickly, BASIC)
  - [ ] 9: misc programs
-   - [ ] "manual" Git-like snapshot manager
    - [ ] RAM "defragmenter" (?)
+   - [ ] basic dialog-based clock (use Flib for big text)
    - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
+     - [ ] fully document code
 
 # misc
  - [ ] sendkey: press a key from a BASIC program
@@ -42,3 +45,6 @@
  - [ ] CycleGen, the animation software
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
+   - [ ] update version numbers, reformat comments if necessary
+   - [ ] fully document code
+ - [ ] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
