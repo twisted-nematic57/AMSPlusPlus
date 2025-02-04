@@ -41,4 +41,4 @@
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
  - [ ] CycleGen, the animation software
    - [X] fix undefined maxsteps w/fillmem issue
-   - [ ] update/modernize
+   - [X] update/modernize (also CycleView and Clicker)
