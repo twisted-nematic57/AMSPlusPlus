@@ -9,8 +9,7 @@
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
      - [X] Add a status bar message showing current angle value
      - [X] Let the user type in a different value?
-     - [ ] Add a "prerender" feature that renders pics of the graph at 20 degree steps automatically - default is realtime
-     - [ ] Add more exit keys - CLEAR, HOME(also does DispHome)
+     - [X] Add more exit keys - CLEAR, HOME(also does DispHome)
  - [X] 6: Quick Insert
    - [X] log(
    - [X] root(
@@ -42,3 +41,5 @@
  - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
  - [ ] UltimateSL: ultimate status line modifier, supporting BUSY/PAUSE/\[cleared\] and status bars
+ - [ ] CycleGen, the animation software
+   - [ ] update/modernize
