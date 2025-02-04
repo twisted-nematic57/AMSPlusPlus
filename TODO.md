@@ -39,7 +39,6 @@
  - [ ] sendkey: press a key from a BASIC program
  - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
- - [ ] UltimateSL: ultimate status line modifier, supporting BUSY/PAUSE/\[cleared\] and status bars
  - [ ] CycleGen, the animation software
    - [X] fix undefined maxsteps w/fillmem issue
    - [ ] update/modernize
