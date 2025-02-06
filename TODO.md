@@ -48,4 +48,5 @@
    - [X] update/modernize (also CycleView and Clicker)
    - [ ] update version numbers, reformat comments if necessary
    - [ ] fully document code
+   - [X] improve performance in fastloop in Clicker
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
