@@ -43,10 +43,12 @@
  - [ ] sendkey: press a key from a BASIC program
  - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
- - [ ] CycleGen, the animation software
+ - [X] CycleGen, the animation software
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
    - [ ] update version numbers, reformat comments if necessary
    - [ ] fully document code
-   - [X] improve performance in fastloop in Clicker
+   - [ ] create/do test cases
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
+   - [X] improve performance in fastloop in Clicker
+   - [ ] create/do testcases
