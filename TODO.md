@@ -52,3 +52,4 @@
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
    - [X] improve performance in fastloop in Clicker
    - [ ] create/do testcases
+ - [ ] gpacalc: Interactive GPA calculator w/data persistence
