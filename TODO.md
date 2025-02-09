@@ -42,6 +42,18 @@
 # misc
  - [ ] sendkey: press a key from a BASIC program
    - [ ] arrow keys + 2nd + diamond
+     - [ ] LEFT: 338
+     - [ ] RIGHT: 344
+     - [ ] DOWN: 340
+     - [ ] UP: 337
+     - [ ] 2nd + LEFT: 4434
+     - [ ] 2nd + RIGHT: 4440
+     - [ ] 2nd + DOWN: 4436
+     - [ ] 2nd + UP: 4433
+     - [ ] D + LEFT: 16722
+     - [ ] D + RIGHT: 16728
+     - [ ] D + DOWN: 16724
+     - [ ] D + UP: 16721
    - [ ] F1-F5 + Diamond F1
    - [ ] Enter
    - [ ] Copy + Paste
