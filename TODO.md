@@ -3,8 +3,8 @@
  - [ ] 1: Draw tickmarks, shading, grayscale, implicit, x= equations
  - [ ] 2: Configure Graph + Styling
    - [ ] user stores x-graphs as x1-99, implicits as imp1-99
- - [ ] 3: Round ans(1) - numbers mean # of digits to round to; A = 0 digits
-   - [X] Hit Enter automatically after paste?
+ - [X] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
+   - [X] Hit Enter automatically after paste? (+ Clear)
    - [X] Bottom of the menu can be just good old round(
  - [ ] 4: "manual" Git-like snapshot manager
  - [X] 5: custom zoom box - aspect ratio maintaining
@@ -13,7 +13,6 @@
      - [X] Let the user type in a different value?
      - [X] Add more exit keys - CLEAR, HOME(also does DispHome)
        - [X] Implemented this for the 2D program as well
-   - [ ] fully document code
  - [X] 6: Quick Insert
    - [X] log(
    - [X] root(
@@ -38,7 +37,6 @@
    - [ ] RAM "defragmenter" (manually scrolls through history and then back)
    - [ ] basic dialog-based clock (use Flib for big text)
    - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
-     - [ ] fully document code
 
 # misc
  - [X] sendkey: press a key from a BASIC program
@@ -51,7 +49,6 @@
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
    - [X] update version numbers, reformat comments if necessary
-   - [ ] fully document code
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
    - [X] improve performance in fastloop in Clicker
  - [ ] gpacalc: Interactive GPA calculator w/data persistence
