@@ -56,7 +56,7 @@
      - [X] D + UP: 16721
    - [ ] F1-F5 + Diamond F1
      - [ ] \[268,272\]
-     - [ ] 2ndF1: 16652
+     - [ ] DiamF1: 16652
    - [ ] Enter
    - [ ] Copy + Paste
  - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
