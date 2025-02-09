@@ -34,8 +34,8 @@
    - [X] misc\flib("")
  - [ ] 7: Quicksave Text for DeepRCL
  - [ ] 8: DeepRCL (save any text and RCL it quickly, BASIC)
- - [ ] 9: misc programs
-   - [ ] RAM "defragmenter" (manually scrolls through history and then back)
+ - [X] 9: misc programs
+   - [X] RAM "defragmenter" (manually scrolls through history and then back)
    - [ ] basic dialog-based clock (use Flib for big text)
    - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
 
