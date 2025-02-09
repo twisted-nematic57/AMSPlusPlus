@@ -46,10 +46,12 @@
  - [X] CycleGen, the animation software
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
-   - [ ] update version numbers, reformat comments if necessary
+   - [X] update version numbers, reformat comments if necessary
    - [ ] fully document code
-   - [ ] create/do test cases
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
    - [X] improve performance in fastloop in Clicker
-   - [ ] create/do testcases
  - [ ] gpacalc: Interactive GPA calculator w/data persistence
+ - [ ] guiclock: a nice-looking clock program!
+   - [ ] just the time
+   - [ ] timer
+   - [ ] stopwatch
