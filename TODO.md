@@ -13,6 +13,7 @@
      - [X] Let the user type in a different value?
      - [X] Add more exit keys - CLEAR, HOME(also does DispHome)
        - [X] Implemented this for the 2D program as well
+   - [ ] For zooming, make the amplification first-priority and move finer controls to the 2nd buttons
  - [X] 6: Quick Insert
    - [X] log(
    - [X] root(
