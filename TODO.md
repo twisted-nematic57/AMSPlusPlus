@@ -12,6 +12,7 @@
      - [X] Add a status bar message showing current angle value
      - [X] Let the user type in a different value?
      - [X] Add more exit keys - CLEAR, HOME(also does DispHome)
+       - [X] Implemented this for the 2D program as well
    - [ ] fully document code
  - [X] 6: Quick Insert
    - [X] log(
@@ -34,7 +35,7 @@
  - [ ] 7: Quicksave Text for DeepRCL
  - [ ] 8: DeepRCL (save any text and RCL it quickly, BASIC)
  - [ ] 9: misc programs
-   - [ ] RAM "defragmenter" (?)
+   - [ ] RAM "defragmenter" (manually scrolls through history and then back)
    - [ ] basic dialog-based clock (use Flib for big text)
    - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
      - [ ] fully document code
