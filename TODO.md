@@ -41,6 +41,10 @@
 
 # misc
  - [ ] sendkey: press a key from a BASIC program
+   - [ ] arrow keys + 2nd + diamond
+   - [ ] F1-F5 + Diamond F1
+   - [ ] Enter
+   - [ ] Copy + Paste
  - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
  - [X] CycleGen, the animation software
