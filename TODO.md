@@ -49,8 +49,11 @@
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
    - [X] update version numbers, reformat comments if necessary
+   - [ ] send a key every cycle to deter APD
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
    - [X] improve performance in fastloop in Clicker
+   - [ ] revise comments, keycode indications
+   - [ ] in autocompute mode, send a key every computation to deter APD
  - [ ] gpacalc: Interactive GPA calculator w/data persistence
  - [ ] guiclock: a nice-looking clock program!
    - [ ] just the time
