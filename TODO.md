@@ -54,11 +54,11 @@
      - [X] D + RIGHT: 16728
      - [X] D + DOWN: 16724
      - [X] D + UP: 16721
-   - [ ] F1-F5 + Diamond F1
-     - [ ] \[268,272\]
-     - [ ] DiamF1: 16652
-   - [ ] Enter
-   - [ ] Copy + Paste
+   - [X] F1-F5 + Diamond F1
+     - [X] \[268,272\]
+     - [X] DiamF1: 16652
+   - [ ] Enter (13)
+   - [ ] Copy + Paste (24576/16648)
  - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
  - [X] CycleGen, the animation software
