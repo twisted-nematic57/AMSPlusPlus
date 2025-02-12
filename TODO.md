@@ -46,6 +46,7 @@
    - [X] Enter (13), Copy + Paste (24576/16648), Clear (263)
  - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
+ - [ ] brutesum: no matter what, using approximations or not, find the sum of a series
  - [X] CycleGen, the animation software
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
