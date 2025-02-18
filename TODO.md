@@ -53,8 +53,9 @@
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
    - [X] update version numbers, reformat comments if necessary
-   - [ ] send a key every cycle to deter APD
+   - [ ] deter APD
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
    - [X] improve performance in fastloop in Clicker
    - [ ] revise comments, keycode indications
-   - [ ] in autocompute mode, send a key every computation to deter APD
+   - [ ] in autocompute mode, deter APD
+   - [ ] Optimize list appending - don't use augment(
