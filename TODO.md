@@ -44,6 +44,7 @@
    - [X] arrow keys + 2nd + diamond
    - [X] F1-F5 + Diamond F1
    - [X] Enter (13), Copy + Paste (24576/16648), Clear (263)
+   - [ ] Translate this into a BASIC program with heavy input validation - thanks Zeroko!!
  - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
  - [ ] brutesum: no matter what, using approximations or not, find the sum of a series
