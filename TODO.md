@@ -38,7 +38,8 @@
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
    - [ ] basic dialog-based clock (use Flib for big text)
    - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
-     - [ ] Show current battery level
+     - [X] Show current battery level
+     - [X] Optimize list appending
 
 # misc
  - [X] sendkey: press a key from a BASIC program
