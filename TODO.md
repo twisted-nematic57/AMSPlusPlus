@@ -57,6 +57,6 @@
    - [ ] deter APD
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
    - [X] improve performance in fastloop in Clicker
-   - [ ] revise comments, keycode indications
+   - [X] revise comments, keycode indications
    - [ ] in autocompute mode, deter APD
-   - [ ] Optimize list appending - don't use augment(
+   - [X] Optimize list appending - don't use augment(
