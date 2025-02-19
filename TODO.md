@@ -50,7 +50,7 @@
  - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
    - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
  - [ ] brutesum: no matter what, using approximations or not, find the sum of a series
- - [ ] hrglass: call before and after executing a program to get the time, in seconds, it takes to execute (in variable `exectime`)
+ - [X] hrglass: call before and after executing a program to get the time, in seconds, it takes to execute (in variable `exectime`)
  - [X] CycleGen, the animation software
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
