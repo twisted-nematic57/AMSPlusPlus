@@ -60,3 +60,4 @@
    - [X] improve performance in fastloop in Clicker
    - [X] revise comments, keycode indications
    - [X] Optimize list appending - don't use augment(
+ - [ ] dbd for zeroko - should be compatible with finance app?
