@@ -60,4 +60,14 @@
    - [X] improve performance in fastloop in Clicker
    - [X] revise comments, keycode indications
    - [X] Optimize list appending - don't use augment(
- - [ ] dbd for zeroko - should be compatible with finance app?
+ - [ ] iso8601tools
+   - [ ] geti8601(date,time,fmt): get the current date/time/week with one of the six ISO 8601 formats
+     - 0: Ordinal date
+     - 1: Date
+     - 2: Time
+     - 3: Date and time
+     - 4: Week
+     - 5: Week with weekday
+ 
+   - [ ] leni8601(dt1,dt2,res): returns the length of time between ISO 8601-formatted dates/times d1 and d2, rounded to res (sec/min/hr/day/wk/mth/yr)
+   - [ ] dbdi8601(d1,d2): recreation of Finance app's dbd( but works only on days
