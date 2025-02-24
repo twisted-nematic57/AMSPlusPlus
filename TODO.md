@@ -6,6 +6,7 @@
  - [X] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
    - [X] Hit Enter automatically after paste? (+ Clear)
    - [X] Bottom of the menu can be just good old round(
+   - [ ] Handle sigfigs - get entry, figure out # of sigfigs, then round ans to that many digits
  - [ ] 4: "manual" Git-like snapshot manager
  - [X] 5: custom zoom box - aspect ratio maintaining
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
