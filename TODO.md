@@ -40,6 +40,7 @@
    - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
      - [X] Show current battery level
      - [X] Optimize list appending
+     - [ ] Show the raw battery level reading on-dialog
 
 # misc
  - [X] sendkey: press a key from a BASIC program
@@ -47,8 +48,9 @@
    - [X] F1-F5 + Diamond F1
    - [X] Enter (13), Copy + Paste (24576/16648), Clear (263)
    - [ ] Translate this into a BASIC program with heavy input validation - thanks Zeroko!!
- - [ ] brutesolve: look for numbers that make an expression = to 0; not newton's method
-   - [ ] output a list of evaluations (output) along with their input-vals sorted by size?
+ - [ ] next(num,dir): returns the next representable value of approx(num). If dir < 0, returns the last representable value (towards -inf).
+ - [ ] brutesolve: look for FP numbers that make an expression = to 0 (not newton's method!!)
+   - [ ] output a list of x smallest evaluations (output) along with their input-vals sorted by size?
  - [ ] brutesum: no matter what, using approximations or not, find the sum of a series
  - [X] hrglass: call before and after executing a program to get the time, in seconds, it takes to execute (in variable `exectime`)
  - [X] CycleGen, the animation software
@@ -61,13 +63,16 @@
    - [X] revise comments, keycode indications
    - [X] Optimize list appending - don't use augment(
  - [ ] iso8601tools
-   - [ ] geti8601(date,time,fmt): get the current date/time/week with one of the six ISO 8601 formats
+   - [ ] geti8601(date,time,fmt): convert the date/time to one of the six ISO 8601 formats
      - 0: Ordinal date
      - 1: Date
      - 2: Time
      - 3: Date and time
      - 4: Week
      - 5: Week with weekday
- 
-   - [ ] leni8601(dt1,dt2,res): returns the length of time between ISO 8601-formatted dates/times d1 and d2, rounded to res (sec/min/hr/day/wk/mth/yr)
-   - [ ] dbdi8601(d1,d2): recreation of Finance app's dbd( but works only on days
+   - [ ] tconv(dt,fmt): convert dt to a different ISO 8601 format, specified by fmt
+     - [ ] if fmt has a fractional part = .1, returns the basic format instead of the extended (human-readable version); this cannot be converted back by iso8601tools automatically!
+   - [ ] tlen(dt1,dt2): returns the length of time between ISO 8601-formatted dates/times d1 and d2 in seconds
+   - [ ] future(dt,forward): returns the date and time stamp of dt incremented by forward seconds.
+   - [ ] past(dt,backward): returns the date and time stamp of dt decremented by backward seconds.
+   - [ ] dbd(d1,d2): recreation of Finance app's dbd( but works only on days
