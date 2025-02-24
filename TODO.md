@@ -48,7 +48,7 @@
    - [X] F1-F5 + Diamond F1
    - [X] Enter (13), Copy + Paste (24576/16648), Clear (263)
    - [ ] Translate this into a BASIC program with heavy input validation - thanks Zeroko!!
- - [ ] next(num,dir): returns the next representable value of approx(num). If dir < 0, returns the last representable value (towards -inf).
+ - [ ] next(num,dir): returns the next FP representable value of approx(num). If dir < 0, returns the last representable value (towards -inf).
  - [ ] brutesolve: look for FP numbers that make an expression = to 0 (not newton's method!!)
    - [ ] output a list of x smallest evaluations (output) along with their input-vals sorted by size?
  - [ ] brutesum: no matter what, using approximations or not, find the sum of a series
