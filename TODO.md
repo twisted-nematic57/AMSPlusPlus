@@ -34,7 +34,7 @@
    - [X] Else
    - [X] End
    - [X] misc\flib("")
- - [ ] 7: Quicksave Text for DeepRCL
+ - [ ] 7: Pretty Print expression writer (Hail)
  - [ ] 8: DeepRCL (save any text and RCL it quickly, BASIC)
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
