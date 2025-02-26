@@ -65,7 +65,7 @@
    - [X] revise comments, keycode indications
    - [X] Optimize list appending - don't use augment(
  - [x] padstr(str,chr,n,dir): pad str to num chars with chr, direction changes the "side" to pad to
-   - [ ] if dim(str) => n, returns original string truncated to n chars from dir?
+   - [X] if dim(str) > n, returns original string truncated to n chars from dir?
  - [ ] iso8601tools
    - [ ] geti8601(date,time,fmt): convert the date/time to one of the six ISO 8601 formats
      - 0: Ordinal date
