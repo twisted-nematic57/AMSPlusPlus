@@ -44,6 +44,9 @@
      - [X] Optimize list appending
      - [ ] Show the raw battery level reading on-dialog
 
+# direct AMS extensions
+ - [ ] Custom units that go smaller and larger than what the calc already has
+
 # misc
  - [X] sendkey: press a key from a BASIC program
    - [X] arrow keys + 2nd + diamond
