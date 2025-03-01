@@ -46,6 +46,8 @@
    - [X] 68K clock frequency measurement utility
      - [X] make it possible to use it programmatically by setting/getting variables
      - [ ] use built in 68K BASIC functions to keep track of time, you fool!!
+   - [ ] Resistor color code -> ohms converter
+     - [ ] Vice versa?
 
 # direct AMS extensions
  - [ ] Custom units that go smaller and larger than what the calc already has
