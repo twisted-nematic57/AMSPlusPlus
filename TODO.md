@@ -43,6 +43,9 @@
      - [X] Show current battery level
      - [X] Optimize list appending
      - [ ] Show the raw battery level reading on-dialog
+   - [X] 68K clock frequency measurement utility
+     - [X] make it possible to use it programmatically by setting/getting variables
+     - [ ] Fix the time calculation routine to make it work if midnight is crossed.
 
 # direct AMS extensions
  - [ ] Custom units that go smaller and larger than what the calc already has
