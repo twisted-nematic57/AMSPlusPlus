@@ -45,7 +45,9 @@
      - [ ] Show the raw battery level reading on-dialog
    - [X] 68K clock frequency measurement utility
      - [X] make it possible to use it programmatically by setting/getting variables
-     - [ ] use built in 68K BASIC functions to keep track of time, you fool!!
+     - [X] use built in 68K BASIC functions to keep track of time, you fool!!
+     - [X] Optimize time-tracking routine locations
+     - [X] Delete `automeas` after finishing if auto = true
    - [ ] Resistor color code -> ohms converter
      - [ ] Vice versa?
 
@@ -62,7 +64,6 @@
  - [ ] brutesolve: look for FP numbers that make an expression = to 0 (not newton's method!!)
    - [ ] output a list of x smallest evaluations (output) along with their input-vals sorted by size?
  - [ ] brutesum: no matter what, using approximations or not, find the sum of a series
- - [X] hrglass: call before and after executing a program to get the time, in seconds, it takes to execute (in variable `exectime`)
  - [X] CycleGen, the animation software
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
