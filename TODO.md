@@ -48,6 +48,7 @@
      - [X] use built in 68K BASIC functions to keep track of time, you fool!!
      - [X] Optimize time-tracking routine locations
      - [X] Delete `automeas` after finishing if auto = true
+     - [ ] Add a way to take a more precise measurement by doing it for longer
    - [ ] Resistor color code -> ohms converter
      - [ ] Vice versa?
 
