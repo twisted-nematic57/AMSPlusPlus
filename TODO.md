@@ -42,7 +42,7 @@
    - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
      - [X] Show current battery level
      - [X] Optimize list appending
-     - [ ] Show the raw battery level reading on-dialog
+     - [X] Show the raw battery level reading on-dialog
    - [X] 68K clock frequency measurement utility
      - [X] make it possible to use it programmatically by setting/getting variables
      - [X] use built in 68K BASIC functions to keep track of time, you fool!!
@@ -74,6 +74,7 @@
    - [X] improve performance in fastloop in Clicker
    - [X] revise comments, keycode indications
    - [X] Optimize list appending - don't use augment(
+   - [ ] Make \[CLEAR\] and \[ESC\] also exit the program
  - [x] padstr(str,chr,n,dir): pad str to num chars with chr, direction changes the "side" to pad to
    - [X] if dim(str) > n, returns original string truncated to n chars from dir?
    - [ ] Add support for chr to be multiple chars????
