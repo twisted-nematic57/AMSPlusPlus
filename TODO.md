@@ -81,3 +81,4 @@
    - [X] if dim(str) > n, returns original string truncated to n chars from dir?
  - [ ] idbd(d1,d2): recreation of Finance app's dbd( but works only on ISO8601
  - [ ] dord({year,month,day}): get the integer ordinal day of the given date
+ - [ ] deor(str): takes str full of "var=(solution) or var=(solution) or var=(solution) ..." and returns a list of the solutions without any mention of var or "or"
