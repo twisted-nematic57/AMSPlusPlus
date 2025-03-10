@@ -43,13 +43,14 @@
      - [X] Show current battery level
      - [X] Optimize list appending
      - [X] Show the raw battery level reading on-dialog
-     - [ ] Remove unnecessary intro at the top
+     - [X] Remove unnecessary intro at the top
    - [X] 68K clock frequency measurement utility
      - [X] make it possible to use it programmatically by setting/getting variables
      - [X] use built in 68K BASIC functions to keep track of time, you fool!!
      - [X] Optimize time-tracking routine locations
      - [X] Delete `automeas` after finishing if auto = true
-     - [ ] Add a way to take a more precise measurement by doing it for longer
+     - [ ] Remove unnecessary intro at the top - move to a "duration" dialog
+       - [ ] Add a way to take a more precise measurement by doing it for longer
    - [ ] Resistor color code -> ohms converter
      - [ ] Vice versa?
 
