@@ -1,6 +1,6 @@
 # kbdprgms
 
- - [ ] 1: Draw tickmarks, shading, grayscale, implicit, x= equations
+ - [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations
  - [ ] 2: Configure Graph + Styling
    - [ ] user stores x-graphs as x1-99, implicits as imp1-99
  - [X] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
@@ -35,7 +35,7 @@
    - [X] End
    - [X] misc\flib("")
  - [ ] 7: ...
- - [ ] 8: DeepRCL (save any text and RCL it quickly, BASIC)
+ - [ ] 8: FormulaOne (formula storage and recallation toolbox)
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
    - [ ] basic dialog-based clock (use Flib for big text)
@@ -53,7 +53,7 @@
      - [ ] Vice versa?
 
 # direct AMS extensions
- - [ ] Custom units that go smaller and larger than what the calc already has
+ - [ ] Custom units
 
 # misc
  - [X] sendkey: press a key from a BASIC program
@@ -77,18 +77,5 @@
    - [ ] Make \[CLEAR\] and \[ESC\] also exit the program
  - [x] padstr(str,chr,n,dir): pad str to num chars with chr, direction changes the "side" to pad to
    - [X] if dim(str) > n, returns original string truncated to n chars from dir?
-   - [ ] Add support for chr to be multiple chars????
- - [ ] iso8601tools
-   - [ ] geti8601(date,time,fmt): convert the date/time to one of the six ISO 8601 formats
-     - 0: Ordinal date
-     - 1: Date
-     - 2: Time
-     - 3: Date and time
-     - 4: Week
-     - 5: Week with weekday
-   - [ ] tconv(dt,fmt): convert dt to a different ISO 8601 format, specified by fmt
-     - [ ] if fmt has a fractional part = .1, returns the basic format instead of the extended (human-readable version); this cannot be converted back by iso8601tools automatically!
-   - [ ] tlen(dt1,dt2): returns the length of time between ISO 8601-formatted dates/times d1 and d2 in seconds
-   - [ ] future(dt,forward): returns the date and time stamp of dt incremented by forward seconds.
-   - [ ] past(dt,backward): returns the date and time stamp of dt decremented by backward seconds.
-   - [ ] dbd(d1,d2): recreation of Finance app's dbd( but works only on days
+ - [ ] idbd(d1,d2): recreation of Finance app's dbd( but works only on ISO8601
+ - [ ] dord({year,month,day}): get the integer ordinal day of the given date
