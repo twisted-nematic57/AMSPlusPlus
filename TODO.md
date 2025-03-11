@@ -57,6 +57,7 @@
    - [ ] Clock with Mandelbrot computation support
      - [ ] Make it look like DCLOCK, but make use of the status line and blank space to display stuff like progress bars
      - [ ] Add timer
+       - [ ] add "pause" feature
      - [ ] Figure out the mandelbrot computation part, lmao
      - [ ] Add stopwatch - no background computation; should save list of stops at termination to `stoppnts`
 
