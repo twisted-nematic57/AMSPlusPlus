@@ -40,7 +40,6 @@
  - [ ] 8: FormulaOne (formula storage and recallation toolbox)
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
-   - [ ] basic dialog-based clock (use Flib for big text)
    - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
      - [X] Show current battery level
      - [X] Optimize list appending
@@ -55,6 +54,11 @@
        - [ ] Add a way to take a more precise measurement by doing it for longer
    - [ ] Resistor color code -> ohms converter
      - [ ] Vice versa?
+   - [ ] Clock with Mandelbrot computation support
+     - [ ] Make it look like DCLOCK, but make use of the status line and blank space to display stuff like progress bars
+     - [ ] Add timer
+     - [ ] Figure out the mandelbrot computation part, lmao
+     - [ ] Add stopwatch - no background computation; should save list of stops at termination to `stoppnts`
 
 # direct AMS extensions
  - [ ] Custom units
