@@ -45,6 +45,7 @@
      - [X] Optimize list appending
      - [X] Show the raw battery level reading on-dialog
      - [X] Remove unnecessary intro at the top
+     - [ ] Make a tool that shows the total number of cycles in a "mountain" graph
    - [X] 68K clock frequency measurement utility
      - [X] make it possible to use it programmatically by setting/getting variables
      - [X] use built in 68K BASIC functions to keep track of time, you fool!!
@@ -87,5 +88,5 @@
  - [x] padstr(str,chr,n,dir): pad str to num chars with chr, direction changes the "side" to pad to
    - [X] if dim(str) > n, returns original string truncated to n chars from dir?
  - [ ] idbd(d1,d2): recreation of Finance app's dbd( but works only on ISO8601
- - [ ] dord({year,month,day}): get the integer ordinal day of the given date
+ - [X] dord({year,month,day}): get the integer ordinal day of the given date
  - [ ] deor(str): takes str full of "var=(solution) or var=(solution) or var=(solution) ..." and returns a list of the solutions without any mention of var or "or"
