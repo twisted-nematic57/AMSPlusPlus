@@ -36,7 +36,7 @@
    - [X] Else
    - [X] End
    - [X] misc\flib("")
- - [ ] 7: Shortcut to press F1, 6, then Home (for use with EQW)
+ - [ ] 7: Shortcut to press up arrow key a bunch of times, F1, 6, then Home (for use with EQW)
  - [ ] 8: FormulaOne (formula storage and recallation toolbox)
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
