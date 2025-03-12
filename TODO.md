@@ -62,8 +62,7 @@
      - [X] Migrate away from Flib
      - [X] Regular clock
      - [X] Timer (dialog input)
-     - [ ] Timer (until a certain time)
-     - [ ] Stopwatch
+     - [X] Stopwatch
 
 # direct AMS extensions
  - [ ] Custom units
