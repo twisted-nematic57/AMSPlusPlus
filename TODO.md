@@ -59,10 +59,10 @@
    - [ ] DCLOCK wrapper
      - [X] Make DCLOCK work in a different folder (ZCLOCK)
      - [X] Make it not touch the modes at all (Use GDB)
-     - [ ] Migrate away from Flib
+     - [X] Migrate away from Flib
      - [ ] Regular clock
      - [ ] Timer (dialog input)
-     - [ ] Stopwatch - store time to `stoptime` on termination
+     - [ ] Stopwatch
 
 # direct AMS extensions
  - [ ] Custom units
