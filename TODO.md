@@ -58,7 +58,8 @@
      - [ ] Vice versa?
    - [ ] DCLOCK wrapper
      - [ ] Make DCLOCK work in a different folder (ZCLOCK)
-     - [ ] Make it not touch the modes at all
+     - [ ] Make it not touch the modes at all (Use GDB)
+     - [ ] Migrate away from Flib
      - [ ] Regular clock
      - [ ] Timer (dialog input)
      - [ ] Stopwatch - store time to `stoptime` on termination
