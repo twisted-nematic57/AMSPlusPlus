@@ -60,8 +60,9 @@
      - [X] Make DCLOCK work in a different folder (ZCLOCK)
      - [X] Make it not touch the modes at all (Use GDB)
      - [X] Migrate away from Flib
-     - [ ] Regular clock
-     - [ ] Timer (dialog input)
+     - [X] Regular clock
+     - [X] Timer (dialog input)
+     - [ ] Timer (until a certain time)
      - [ ] Stopwatch
 
 # direct AMS extensions
