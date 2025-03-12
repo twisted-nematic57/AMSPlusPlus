@@ -57,8 +57,8 @@
    - [ ] Resistor color code -> ohms converter
      - [ ] Vice versa?
    - [ ] DCLOCK wrapper
-     - [ ] Make DCLOCK work in a different folder (ZCLOCK)
-     - [ ] Make it not touch the modes at all (Use GDB)
+     - [X] Make DCLOCK work in a different folder (ZCLOCK)
+     - [X] Make it not touch the modes at all (Use GDB)
      - [ ] Migrate away from Flib
      - [ ] Regular clock
      - [ ] Timer (dialog input)
