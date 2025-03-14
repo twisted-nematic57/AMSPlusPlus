@@ -85,7 +85,7 @@
    - [X] improve performance in fastloop in Clicker
    - [X] revise comments, keycode indications
    - [X] Optimize list appending - don't use augment(
-   - [ ] Make \[CLEAR\] and \[ESC\] also exit the program
+   - [ ] Make \[CLEAR\] and \[ESC\] and \[BACKSPACE\] also exit the program
  - [x] padstr(str,chr,n,dir): pad str to num chars with chr, direction changes the "side" to pad to
    - [X] if dim(str) > n, returns original string truncated to n chars from dir?
  - [ ] idbd(d1,d2): recreation of Finance app's dbd( but works only on ISO8601
