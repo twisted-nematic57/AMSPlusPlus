@@ -52,8 +52,8 @@
      - [X] use built in 68K BASIC functions to keep track of time, you fool!!
      - [X] Optimize time-tracking routine locations
      - [X] Delete `automeas` after finishing if auto = true
-     - [ ] Remove unnecessary intro at the top - move to a "duration" dialog
-       - [ ] Add a way to take a more precise measurement by doing it for longer
+     - [X] Remove unnecessary intro at the top
+     - [X] Add a way to take a more precise measurement by using MathTool.timing()
    - [ ] Resistor color code -> ohms converter
      - [ ] Vice versa?
    - [ ] DCLOCK wrapper
