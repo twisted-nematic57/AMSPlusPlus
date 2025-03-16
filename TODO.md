@@ -36,6 +36,7 @@
    - [X] Then
    - [X] Else
    - [X] End
+   - [X] misc\statline("")
    - [X] misc\flib("")
  - [ ] 7: Shortcut to press 2nd + UP, F1, 6, then Home (for use with EQW)
  - [ ] 8: FormulaOne (formula storage and recallation toolbox)
