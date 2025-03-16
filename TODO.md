@@ -3,7 +3,7 @@
  - [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations
  - [ ] 2: Configure Graph + Styling
    - [ ] user stores x-graphs as x1-99, implicits as imp1-99
- - [X] 3: kk
+ - [ ] 3: a better Units dialog
  - [ ] 4: "manual" Git-like snapshot manager
  - [X] 5: custom zoom box - aspect ratio maintaining
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
@@ -39,7 +39,7 @@
    - [ ] Add support for the above but with multiple answers
    - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
    - [ ] Make it work on sci notation
-   - [ ] If EQW is active, shortcut to press 2nd + UP, COPY, Home, PASTE
+   - [ ] **eqwprgm:** shortcut to press 2nd + UP, COPY, Home, PASTE
      - [ ] preserve contents of clipboard?
  - [ ] 8: FormulaOne (formula storage and recallation toolbox)
  - [X] 9: misc programs
