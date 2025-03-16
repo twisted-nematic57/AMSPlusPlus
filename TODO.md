@@ -3,13 +3,7 @@
  - [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations
  - [ ] 2: Configure Graph + Styling
    - [ ] user stores x-graphs as x1-99, implicits as imp1-99
- - [X] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
-   - [ ] Hit Enter automatically after paste?
-   - [X] Bottom of the menu can be just good old round(
-   - [ ] Add support for "(var) = "
-   - [ ] Add support for the above but with multiple answers
-   - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
-     - [ ] Make it work on sci notation
+ - [X] 3: kk
  - [ ] 4: "manual" Git-like snapshot manager
  - [X] 5: custom zoom box - aspect ratio maintaining
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
@@ -38,7 +32,15 @@
    - [X] End
    - [X] misc\statline("")
    - [X] misc\flib("")
- - [ ] 7: Shortcut to press 2nd + UP, F1, 6, then Home (for use with EQW)
+ - [ ] 7: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
+   - [ ] Hit Enter automatically after paste?
+   - [X] Bottom of the menu can be just good old round(
+   - [ ] Add support for "(var) = "
+   - [ ] Add support for the above but with multiple answers
+   - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
+   - [ ] Make it work on sci notation
+   - [ ] If EQW is active, shortcut to press 2nd + UP, COPY, Home, PASTE
+     - [ ] preserve contents of clipboard?
  - [ ] 8: FormulaOne (formula storage and recallation toolbox)
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
@@ -54,6 +56,7 @@
      - [X] Optimize time-tracking routine locations
      - [X] Delete `automeas` after finishing if auto = true
      - [X] Add a way to take a more precise measurement by using MathTool.timing()
+     - [ ] test difference between interrupt disabling/regular
    - [ ] Resistor color code -> ohms converter
      - [ ] Vice versa?
    - [X] DCLOCK wrapper
