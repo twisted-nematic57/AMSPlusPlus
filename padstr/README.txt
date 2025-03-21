@@ -15,7 +15,7 @@ Syntax:
 
   {str,chr} are strings (chr should only be 1 char)
   {n,dir} are integers. (technically dir can be a float, but it'd be better
-                        practice to strictly keep it as either 0 or 1.)
+                        practice to strictly keep it between [-1,1].)
 
  * str is your input string that should be padded or truncated.
  * chr is the character with which the string will be padded, if applicable. It
