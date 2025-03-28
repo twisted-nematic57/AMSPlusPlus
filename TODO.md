@@ -14,6 +14,7 @@
    - [X] For zooming, make the amplification first-priority and move finer controls to the 2nd buttons
    - [X] Make it possible to store/recall multiple zoom positions.
    - [X] Put a "diamond" next to slots that are already populated
+   - [X] If the window position hasn't changed at all, don't make the calculator re-render the graph
  - [X] 6: Quick Insert
    - [X] log(
    - [X] root(
