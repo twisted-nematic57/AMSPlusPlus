@@ -32,6 +32,8 @@
    - [X] Then
    - [X] Else
    - [X] End
+   - [ ] Local
+   - [ ] Goto
    - [X] misc\statline("")
    - [X] misc\flib("")
  - [ ] 7: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
