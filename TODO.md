@@ -35,7 +35,7 @@
    - [X] misc\statline("")
    - [X] misc\flib("")
  - [ ] 7: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
-   - [ ] Hit Enter automatically after paste?
+   - [X] Hit Enter automatically after paste?
    - [X] Bottom of the menu can be just good old round(
    - [ ] Add support for "(var) = "
    - [ ] Add support for the above but with multiple answers
