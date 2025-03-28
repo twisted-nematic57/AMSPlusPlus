@@ -3,7 +3,15 @@
  - [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations
  - [ ] 2: Configure Graph + Styling
    - [ ] user stores x-graphs as x1-99, implicits as imp1-99
- - [ ] 3: a better Units dialog
+ - [ ] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
+   - [X] Hit Enter automatically after paste?
+   - [X] Bottom of the menu can be just good old round(
+   - [ ] Add support for "(var) = "
+   - [ ] Add support for the above but with multiple answers
+   - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
+   - [ ] Make it work on sci notation
+   - [ ] **eqwprgm:** shortcut to press 2nd + UP, COPY, Home, PASTE
+     - [ ] preserve contents of clipboard?
  - [ ] 4: "manual" Git-like snapshot manager
  - [X] 5: custom zoom box - aspect ratio maintaining
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
@@ -36,15 +44,7 @@
    - [X] Goto
    - [X] misc\statline("")
    - [X] misc\flib("")
- - [ ] 7: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
-   - [X] Hit Enter automatically after paste?
-   - [X] Bottom of the menu can be just good old round(
-   - [ ] Add support for "(var) = "
-   - [ ] Add support for the above but with multiple answers
-   - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
-   - [ ] Make it work on sci notation
-   - [ ] **eqwprgm:** shortcut to press 2nd + UP, COPY, Home, PASTE
-     - [ ] preserve contents of clipboard?
+ - [ ] 7: a better Units dialog
  - [ ] 8: FormulaOne (formula storage and recallation toolbox)
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
