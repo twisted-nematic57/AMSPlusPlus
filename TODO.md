@@ -94,7 +94,7 @@
    - [ ] Make \[CLEAR\] and \[ESC\] and \[BACKSPACE\] also exit the program
  - [x] padstr(str,chr,n,dir): pad str to num chars with chr, direction changes the "side" to pad to
    - [X] if dim(str) > n, returns original string truncated to n chars from dir?
-   - [ ] remove unnecessary `Lbl finish` (DO THIS BEFORE RELEASING idbd!)
+   - [X] remove unnecessary `Lbl finish` (DO THIS BEFORE RELEASING idbd!)
  - [X] idbd(d1,d2): recreation of Finance app's dbd( but works only on ISO8601
  - [X] dord({year,month,day}): get the integer ordinal day of the given date
    - [X] Test with https://nsidc.org/data/user-resources/help-center/day-year-doy-calendar
