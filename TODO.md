@@ -6,7 +6,7 @@
  - [ ] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
    - [X] Hit Enter automatically after paste?
    - [X] Bottom of the menu can be just good old round(
-   - [ ] Add support for "(var) = "
+   - [ ] Add support for "(var) = " (use `exp▶list(`)
    - [ ] Add support for the above but with multiple answers
    - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
    - [ ] Make it work on sci notation
