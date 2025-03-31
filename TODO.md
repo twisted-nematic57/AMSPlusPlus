@@ -100,4 +100,3 @@
  - [X] idbd(d1,d2): recreation of Finance app's dbd( but works only on ISO8601
  - [X] dord({year,month,day}): get the integer ordinal day of the given date
    - [X] Test with https://nsidc.org/data/user-resources/help-center/day-year-doy-calendar
- - [ ] deor(str): takes str full of "var=(solution) or var=(solution) or var=(solution) ..." and returns a list of the solutions without any mention of var or "or"
