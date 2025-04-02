@@ -41,6 +41,7 @@
    - [X] Else
    - [X] End
    - [X] Local
+   - [X] Lbl 
    - [X] Goto
    - [X] misc\statline("")
    - [X] misc\flib("")
