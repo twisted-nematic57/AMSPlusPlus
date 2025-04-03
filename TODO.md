@@ -23,6 +23,7 @@
    - [X] Make it possible to store/recall multiple zoom positions.
    - [X] Put a "diamond" next to slots that are already populated
    - [X] If the window position hasn't changed at all, don't make the calculator re-render the graph
+   - [ ] Allow saving/recalling grid line spacing alongside range variables
  - [X] 6: Quick Insert
    - [X] log(
    - [X] root(
