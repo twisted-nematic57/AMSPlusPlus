@@ -70,10 +70,10 @@
      - [X] Regular clock
      - [X] Timer (dialog input)
      - [X] Stopwatch
-   - [ ] Initialization
-     - [ ] load AMS Extender, PreOS, etc. RCL the GDB and load the zooms. Set contrast. Yadda yadda.
-     - [ ] Date/time setting utility
-       - [ ] at the end, display the time in the status line until user presses any key to exit
+   - [x] Initialization
+     - [X] load AMS Extender, PreOS, etc. RCL the GDB and load the zooms. Set contrast. Yadda yadda.
+     - [X] Date/time setting utility
+       - [X] at the end, display the time until user presses any key to exit
 
 # direct AMS extensions
  - [ ] Custom units
