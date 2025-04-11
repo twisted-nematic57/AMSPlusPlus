@@ -8,8 +8,6 @@
    - [X] Bottom of the menu can be just good old round(
    - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
    - [ ] Make it work on sci notation
-   - [ ] **eqwprgm:** shortcut to press 2nd + UP, COPY, Home, PASTE
-     - [ ] preserve contents of clipboard?
  - [ ] 4: "manual" Git-like snapshot manager
  - [X] 5: custom zoom box - aspect ratio maintaining
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
@@ -74,6 +72,12 @@
      - [X] load AMS Extender, PreOS, etc. RCL the GDB and load the zooms. Set contrast. Yadda yadda.
      - [X] Date/time setting utility
        - [X] at the end, display the time until user presses any key to exit
+
+**eqwprgm:**
+  - [X] 1: send current expression to Home and execute immediately
+  - [X] 2: Quick graph
+    - [X] Graphing the main conic, asymptote based on nextfunc value
+    - [ ] Change nextfunc
 
 # direct AMS extensions
  - [ ] Custom units
