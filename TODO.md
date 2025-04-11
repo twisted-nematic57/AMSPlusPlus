@@ -76,6 +76,7 @@
 **eqwprgm:**
   - [X] 1: Quick graph
     - [X] Graphing the main conic, asymptote based on nextfunc value
+    - [ ] no dual-sign asymptote
     - [X] Change nextfunc
 
 # direct AMS extensions
