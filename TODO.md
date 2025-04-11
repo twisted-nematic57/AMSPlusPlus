@@ -74,10 +74,9 @@
        - [X] at the end, display the time until user presses any key to exit
 
 **eqwprgm:**
-  - [X] 1: send current expression to Home and execute immediately
-  - [X] 2: Quick graph
+  - [X] 1: Quick graph
     - [X] Graphing the main conic, asymptote based on nextfunc value
-    - [ ] Change nextfunc
+    - [X] Change nextfunc
 
 # direct AMS extensions
  - [ ] Custom units
