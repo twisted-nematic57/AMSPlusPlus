@@ -58,7 +58,6 @@
      - [X] Optimize time-tracking routine locations
      - [X] Delete `automeas` after finishing if auto = true
      - [X] Add a way to take a more precise measurement by using MathTool.timing()
-     - [ ] test difference between interrupt disabling/regular
    - [ ] Resistor color code -> ohms converter
      - [ ] Vice versa?
    - [X] DCLOCK wrapper
