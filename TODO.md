@@ -3,7 +3,11 @@
  - [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations
  - [ ] 2: Configure Graph + Styling
    - [ ] user stores x-graphs as x1-99, implicits as imp1-99
- - [ ] 3: a better Units dialog
+ - [ ] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
+   - [X] Hit Enter automatically after paste?
+   - [X] Bottom of the menu can be just good old round(
+   - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
+   - [ ] Make it work on sci notation
  - [ ] 4: "manual" Git-like snapshot manager
  - [X] 5: custom zoom box - aspect ratio maintaining
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
@@ -13,7 +17,9 @@
        - [X] Implemented this for the 2D program as well
    - [X] For zooming, make the amplification first-priority and move finer controls to the 2nd buttons
    - [X] Make it possible to store/recall multiple zoom positions.
-   - [ ] Update the default zoom level - make the window a lil bigger
+   - [X] Put a "diamond" next to slots that are already populated
+   - [X] If the window position hasn't changed at all, don't make the calculator re-render the graph
+   - [X] Allow saving/recalling grid line spacing alongside range variables
  - [X] 6: Quick Insert
    - [X] log(
    - [X] root(
@@ -31,17 +37,12 @@
    - [X] Then
    - [X] Else
    - [X] End
+   - [X] Local
+   - [X] Lbl 
+   - [X] Goto
    - [X] misc\statline("")
    - [X] misc\flib("")
- - [ ] 7: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
-   - [ ] Hit Enter automatically after paste?
-   - [X] Bottom of the menu can be just good old round(
-   - [ ] Add support for "(var) = "
-   - [ ] Add support for the above but with multiple answers
-   - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
-   - [ ] Make it work on sci notation
-   - [ ] **eqwprgm:** shortcut to press 2nd + UP, COPY, Home, PASTE
-     - [ ] preserve contents of clipboard?
+ - [ ] 7: a better Units dialog
  - [ ] 8: FormulaOne (formula storage and recallation toolbox)
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
@@ -67,6 +68,16 @@
      - [X] Regular clock
      - [X] Timer (dialog input)
      - [X] Stopwatch
+   - [x] Initialization
+     - [X] load AMS Extender, PreOS, etc. RCL the GDB and load the zooms. Set contrast. Yadda yadda.
+     - [X] Date/time setting utility
+       - [X] at the end, display the time until user presses any key to exit
+
+**eqwprgm:**
+  - [X] 1: Quick graph
+    - [X] Graphing the main conic
+    - [X] asymptote based on nextfunc value
+    - [X] Change nextfunc
 
 # direct AMS extensions
  - [ ] Custom units
@@ -93,8 +104,7 @@
    - [ ] Make \[CLEAR\] and \[ESC\] and \[BACKSPACE\] also exit the program
  - [x] padstr(str,chr,n,dir): pad str to num chars with chr, direction changes the "side" to pad to
    - [X] if dim(str) > n, returns original string truncated to n chars from dir?
-   - [ ] remove unnecessary `Lbl finish` (DO THIS BEFORE RELEASING idbd!)
+   - [X] remove unnecessary `Lbl finish` (DO THIS BEFORE RELEASING idbd!)
  - [X] idbd(d1,d2): recreation of Finance app's dbd( but works only on ISO8601
  - [X] dord({year,month,day}): get the integer ordinal day of the given date
    - [X] Test with https://nsidc.org/data/user-resources/help-center/day-year-doy-calendar
- - [ ] deor(str): takes str full of "var=(solution) or var=(solution) or var=(solution) ..." and returns a list of the solutions without any mention of var or "or"
