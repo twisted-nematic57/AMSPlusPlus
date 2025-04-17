@@ -4,7 +4,9 @@ This is a collection of programs written in assembly, C, and BASIC that signific
 
  * **ccg/ccv:** ~~Generate and play back monochrome animations of graphs~~
  * **clicker:** ~~An interactive recursive function executor~~
- * **grpanner:** Implements a more intuitive, aspect ratio-maintaining 2D graph zooming program
+ * **grpanner:** An intuitive, aspect ratio-maintaining 2D graph panning/zooming program
+ * **rot3d**: A program that interactively moves the 3D graph camera around the graph *only on the θ (theta) angle.* Very useful for "rotating" simple 3D graphs without distortion due to change in camera variables which should remain static.
+ * **dord:** Gets the ordinal date of a certain day - i.e., the *n*th day of a year for a given date
  * **idbd:** Gets the number of days between two ISO 8601-formatted dates
  * **padstr:** A convenient, powerful little string utility that pads and truncates strings
 
