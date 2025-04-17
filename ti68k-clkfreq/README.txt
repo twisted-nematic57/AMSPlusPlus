@@ -1,7 +1,7 @@
-/*** ti68k-clkfreq 1.2 ********************************************************\
+/*** ti68k-clkfreq 1.2.1 ******************************************************\
  * Author:         twisted_nematic57                                          *
  * Special Thanks: Gérard P. Michon (http://www.numericana.com)               *
- * Date:           04/14/2025 [MM-DD-YYYY]                                    *
+ * Date:           04/16/2025 [MM-DD-YYYY]                                    *
  * License:        Public Domain (except when otherwise stated)               *
  * Product Type:   Hybrid BASIC/ASM program                                   *
  * Platform:       TI-89 Titanium; (maybe) TI Voyage 200                      *
@@ -24,6 +24,9 @@ complete certainty if this program will function correctly on that or not.
 
 New in Version 1.2: More precise measurement available if MathTools FlashApp is
 installed; simplified initial startup dialog
+
+Version 1.2.1 was released because I'm a dumbo who forgot to include
+mathtools.zip in release 1.2.
 
 
 I. INSTALLATION
