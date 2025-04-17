@@ -72,12 +72,6 @@
      - [X] Date/time setting utility
        - [X] at the end, display the time until user presses any key to exit
 
-**eqwprgm:**
-  - [X] 1: Quick graph
-    - [X] Graphing the main conic
-    - [X] asymptote based on nextfunc value
-    - [X] Change nextfunc
-
 # direct AMS extensions
  - [ ] Custom units
 
