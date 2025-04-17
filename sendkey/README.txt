@@ -4,6 +4,7 @@
  * Date:           04/16/2025 [MM-DD-YYYY]                                    *
  * License:        Public Domain (unless if otherwise stated)                 *
  *                   - Legal gray areas addressed in IV. LEGAL GRAY AREA      *
+ *                   - Final summary in V. LICENSING SUMMARY                  *
  * Product Type:   Hybrid BASIC/ASM program                                   *
  * Platform:       All TI-68k calculators (?)                                 *
 \******************************************************************************/
@@ -25,8 +26,7 @@ gray area. Please see IV. LEGAL GRAY AREA for more information. The author of
 this program does not have the intention of stealing Samuel's work at all.
 
 This package also includes Samuel's sendstr program, which is 100% unmodified
-and is licensed as freeware (freely distribute; do not modify). Every piece of
-software in this package, except sendstr, is public domain.
+and is licensed as freeware (freely distribute; do not modify).
 
 TL;DR: `sendkey` lets you simulate key presses on your TI-68k calc using BASIC.
 You pass it a keycode and it sends it to the OS. Works great with non-menu,
@@ -146,8 +146,12 @@ time to time.
 
 V. LICENSING SUMMARY
 
-Every piece of software in this package, except sendstr, is under the public
-domain.
+Every piece of software in this package, except sendstr and MathTools, is under
+the public domain.
 
 sendstr is unmodified, has its source included under "asm_src/", and is
 freeware. Do not modify, only use and distribute.
+
+MathTools has a license of "distribute verbatim (mostly), get permission for
+anything else." See MathTools.pdf inside "_dependencies/mathtools.zip" for more
+info.
