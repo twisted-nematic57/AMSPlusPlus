@@ -1,0 +1,53 @@
+Send String by Samuel Stearley Copywrite 2001
+Email: sstear70@calvin.edu
+HomePage:  http://www.geocities.com/sstear70/
+
+3rd release.
+
+
+
+This allows the user to make kbd programs that paste text to the
+entry line.  This will provide quick access to commonly used
+functions.
+
+It takes 1 argument and that is the string to send to the entry
+line.
+
+For example the following kbd program provides quick access to the
+log( function.
+
+kbdprgm1()
+Prgm
+sendstr("log(")
+EndPrgm
+
+
+There is included another program that will move the cursor left
+1 space.  It is called MoveLeft.  So the user can make a kbd
+program that moves the cursor between the two parenthesis of the
+pasted text.
+
+Example:
+
+kbdprgm1()
+Prgm
+sendstr("log()")
+moveleft()
+EndPrgm
+
+
+
+And there is also a third program included called clrhm.  It tells
+tios that clear has been pressed twice, thereby clearing everything
+out of the home entry line.
+
+
+
+
+Legal Stuff:
+___________________________________________________
+This program is freeware so Samuel Stearley is not
+responsible or liable for anything that might
+happen from the use of this program.  Because it is
+a program to enhance basic programs it is freely
+distributable.

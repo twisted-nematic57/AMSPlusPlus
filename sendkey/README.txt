@@ -2,7 +2,8 @@
  * Author:         twisted_nematic57                                          *
  * Special Thanks: Samuel Stearley (sstear70@calvin.edu) and Zeroko           *
  * Date:           04/16/2025 [MM-DD-YYYY]                                    *
- * License:        Public Domain                                              *
+ * License:        Public Domain (unless if otherwise stated)                 *
+ *                   - Legal gray areas addressed in IV. LEGAL GRAY AREA      *
  * Product Type:   Hybrid BASIC/ASM program                                   *
  * Platform:       All TI-68k calculators (?)                                 *
 \******************************************************************************/
@@ -17,6 +18,21 @@ answers, into a plaintext file; you could make a program that automates the
 pasting of an expression from EQW into the Y= editor; the list of possible
 applications goes on. As long as the UI you're trying to interact with doesn't
 involve a menu/popup or dialog, it will work.
+
+sendkey's functionality was largely made possible by the work of Samuel
+Stearley, who licensed his work as freeware, which led to a very strange legal
+gray area. Please see IV. LEGAL GRAY AREA for more information. The author of
+this program does not have the intention of stealing Samuel's work at all.
+
+This package also includes Samuel's sendstr program, which is 100% unmodified
+and is licensed as freeware (freely distribute; do not modify). Every piece of
+software in this package, except sendstr, is public domain.
+
+TL;DR: `sendkey` lets you simulate key presses on your TI-68k calc using BASIC.
+You pass it a keycode and it sends it to the OS. Works great with non-menu,
+non-dialog UI. Use `sendkeyh` if you hate dependencies and love torture. Also
+use sendstr to send entire strings instead of just individual keypresses.
+
 
 
 I. REQUIREMENTS
@@ -35,7 +51,7 @@ really picky. This is also included in the "_dependencies" folder.
 If you want to use a version of the program that has no dependencies, then use
 sendkeyh. It takes a string argument containing a capitalized hexadecimal number
 that is your desired keycode. Otherwise it works the same as the normal version.
-(Warning: It's easer to screw up your calc with this version. Be sure to
+(Warning: It's easier to screw up your calc with this version. Be sure to
 validate your input before passing it to sendkeyh.)
 
 
@@ -53,12 +69,18 @@ Again, for some strange reason, the AMS doesn't react to this event when a menu,
 popup, or dialog is active. I don't know why, and if you think you can fix this
 issue then feel free to email me at `twisted.nematic57@gmail.com`.
 
+DISCLAIMER: The author(s) of this program do not claim responsibility for any
+damages that may arise as the result of the transmission, execution, archival,
+or compression of this program. It has not caused any damage to any of the
+calculators it's been tested on, but do not blame us if you suffer from any
+issues. You have been warned.
 
-III. MORE INFORMATION
+
+III. THE DEVELOPMENT PROCESS
 
 Many thanks to Samuel Stearley for his "sendString" project. It contains an
 included utility, "moveleft", that was used as the base of this tool. Basically,
-it was hardcoded to send a left arrow keypress to the OS. Surely I had to figure
+it was hardcoded to send a left arrow keypress to the OS. Surely I could figure
 out a way to extend it to press any key, it couldn't possibly be that hard...
 
 I am scared of coding my own assembly and possibly screwing up a $160 device, so
@@ -78,8 +100,54 @@ RAM across different AMS versions might make sendkey unusable on certain calcs.
 I dunno, try it for yourself to be sure.
 
 
-DISCLAIMER: The author(s) of this program do not claim responsibility for any
-damages that may arise as the result of the transmission, execution, archival,
-or compression of this program. It has not caused any damage to any of the
-calculators it's been tested on, but do not blame us if you suffer from any
-issues. You have been warned.
+IV. LEGAL GRAY AREA
+
+Samuel Stearley put this text under the label "Legal Stuff" in the readme for
+sendstr, which also had the moveleft program bundled with it:
+"This program is freeware so Samuel Stearley is not responsible or liable for
+anything that might happen from the use of this program. Because it is a program
+to enhance basic programs it is freely distributable."
+
+He declares that sendstr is freeware and is freely distributable, but does not
+say that it may be modified. I distribute a completely unmodified version of
+sendstr with this package, so we can safely just focus on moveleft. If you read
+the legal text again closely, you'll see that Samuel doesn't mention moveleft at
+all - he only talks about sendstr, as indicated by the use of "this program" and
+"it" instead of "these programs" and "they". You can see the entire readme in
+"stearley.txt" for more context if you wish to see it.
+
+I will be defending my use of moveleft and will be arguing in favor of the
+legality of my incorporation of moveleft into sendkey, aka my program.
+
+The way that moveleft works is rather trivial - it sets up an event structure to
+send to the OS and sets its type as "CM_KEY_PRESS", which is a completely
+standard, simple, and extremely common type of event, as detailed by the GCC4TI
+documentation:
+https://debrouxl.github.io/gcc4ti/events.html#EventIDs
+With this in consideration, taking another look at the source code, it's clear
+that moveleft does not explicitly incorporate some sort of copyrightable,
+creative, non-bog-standard way of emulating a key press. It simply hardcodes the
+event structure necessary to send a keypress, specifies that the event should be
+sent to the currently active app, and jumps to an OS function that handles the
+event sending. That's it.
+
+In short, moveleft is functionally perfect and can't be modified in a way that
+would keep its functionality the same while assembling it off a noticeably
+different codebase. It's impossible.
+
+moveleft is not patented and is too simple and lacking creativity to be
+copyrightable. Therefore, it is public domain and *cannot* be copyrighted due to
+the basic requirement that it should be minimally creative, which it's not.
+
+Besides, in the calculator programming community there is only so much example
+code, and, well... a little machine code funnybusiness is bound to happen from
+time to time.
+
+
+V. LICENSING SUMMARY
+
+Every piece of software in this package, except sendstr, is under the public
+domain.
+
+sendstr is unmodified, has its source included under "asm_src/", and is
+freeware. Do not modify, only use and distribute.
