@@ -1,3 +1,6 @@
+;; originally by Samuel Stearley, named "moveleft.asm"
+;; (slightly modified in insignificant ways)
+
 	include	"Os.h"
 	xdef		_ti89
 	xdef		_nostub
@@ -21,7 +24,7 @@ event:
 	dc.w		0			;side is 0		-will be filled by send event
 	dc.w		0			;status flags	-will be filled by send event
 	dc.w		0			;modifiers
-	dc.w		263		;The keycode for the 89
+	dc.w		338		;The keycode for the 89
 
 
 
