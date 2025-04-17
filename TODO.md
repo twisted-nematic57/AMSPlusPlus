@@ -58,7 +58,6 @@
      - [X] Optimize time-tracking routine locations
      - [X] Delete `automeas` after finishing if auto = true
      - [X] Add a way to take a more precise measurement by using MathTool.timing()
-     - [ ] test difference between interrupt disabling/regular
    - [ ] Resistor color code -> ohms converter
      - [ ] Vice versa?
    - [X] DCLOCK wrapper
@@ -87,7 +86,7 @@
    - [X] arrow keys + 2nd + diamond
    - [X] F1-F5 + Diamond F1
    - [X] Enter (13), Copy + Paste (24576/16648), Clear (263)
-   - [ ] Translate this into a BASIC program with heavy input validation - thanks Zeroko!!
+   - [X] Translate this into a BASIC program with heavy input validation - thanks Zeroko!!
  - [ ] next(num,dir): returns the next (towards +inf) FP representable value of approx(num). If dir < 0, returns the last representable value (towards -inf).
  - [ ] brutesolve: look for FP numbers that make an expression = to 0 (not newton's method!!)
    - [ ] output a list of x smallest evaluations (output) along with their input-vals sorted by size?
