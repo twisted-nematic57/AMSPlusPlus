@@ -89,7 +89,8 @@
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
    - [X] update version numbers, reformat comments if necessary
-   - [ ] deter APD
+   - [X] deter APD - introduce apdreset
+   - [X] a bunch of other changes - see changelog in the readme for more info
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
    - [X] improve performance in fastloop in Clicker
    - [X] revise comments, keycode indications
