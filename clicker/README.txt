@@ -10,7 +10,7 @@
 Clicker is a BASIC program that enables you to perform repetitive calculations
 on your TI-89 Titanium much quicker than you can on the Home Screen. You can
 even store and later access intermediate calculation results just as you'd be
-able to do on the real Home Screen. It only has one C subprogram dependency.
+able to do on the real Home Screen.
 
 It works on the basis of performing _iterations_: a user-defined operation works
 on a user-defined starting value. Then, the output of the operation is used as
@@ -18,8 +18,8 @@ input for the next iteration.
 
 The program works flawlessly on negative and complex numbers. It can operate on
 entire lists or matrices. It can also be automated, running many iterations
-internally. It has been tested on many hundreds of inputs, and produces expected
-results every single time.
+internally. You can even chain BASIC commands. It has been tested on many
+hundreds of inputs, and produces expected results every single time.
 
 In summary, this program is one of the only and best dedicated recursive
 function executors for the TI-89 Titanium. It is a stair step towards putting
