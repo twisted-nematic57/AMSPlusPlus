@@ -1,7 +1,7 @@
-/*** Clicker 3.3 **************************************************************\
+/*** Clicker 3.4 **************************************************************\
  * Author:       twisted_nematic57                                            *
- * Date:         02/18/2025 [MM-DD-YYYY]                                      *
- * License:      GNU GPLv3 (or later) - see LICENSE                           *
+ * Date:         04/18/2025 [MM-DD-YYYY]                                      *
+ * License:      Public Domain :)                                             *
  * Product Type: BASIC program                                                *
  * Platform:     TI-89 Titanium - can be ported to other Motorola 68000-based *
                                   TI calculators with ease.                   *
@@ -38,7 +38,7 @@ I. QUICK START
     - Archive all of them for safety (optional but recommended).
 2. Run:
     - On the Home Screen, type:
-        `clicker(start_val,"operation","listname",auto_execute)`
+        `clicker(x,"operation","listname",auto_execute)`
         Example: `clicker(0,"x+1",0,0)`
     - Press [ENTER] to iterate (count up from 0 in steps of 1), and [CLEAR] or
       [HOME] to quit the program.
@@ -205,11 +205,14 @@ part of the Mandelbrot Set. Calculation history will be stored to a list named
 
 4. clicker({2/3,3,5,7},"root(x,3)","cbrts",0)
 Recursively gets the cube roots of 2/3, 3, 5, and 7; stores the results of each
-iteration to a series of variables in the folder "clkrvars"
+iteration to a series of variables in the folder "clkrvars". The resulting
+individual list variables will contain multiple outputs (a list), since the
+input has multiple inputs in the form of a list.
 
 5. clicker([[5,3][8,2]],"x^4","mat",0)
 Gets the 4th power of the matrix, and stores the results of each iteration to a
-series of variables in the folder "clkrvars"
+series of variables in the folder "clkrvars". Again, each iteration is stored as
+its own variable of the matrix type.
 
 6. clicker(0,"x^2+c","mandel2",50)
 An automated version of Example 3. Instead of you having to manually keep
