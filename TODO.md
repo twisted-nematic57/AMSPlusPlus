@@ -89,12 +89,13 @@
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
    - [X] update version numbers, reformat comments if necessary
-   - [ ] deter APD
+   - [X] deter APD - introduce apdreset
+   - [X] a bunch of other changes - see changelog in the readme for more info
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
    - [X] improve performance in fastloop in Clicker
    - [X] revise comments, keycode indications
    - [X] Optimize list appending - don't use augment(
-   - [ ] Make \[CLEAR\] and \[ESC\] and \[BACKSPACE\] also exit the program
+   - [X] some other changes - see changelog in the readme for more info
  - [x] padstr(str,chr,n,dir): pad str to num chars with chr, direction changes the "side" to pad to
    - [X] if dim(str) > n, returns original string truncated to n chars from dir?
    - [X] remove unnecessary `Lbl finish` (DO THIS BEFORE RELEASING idbd!)
