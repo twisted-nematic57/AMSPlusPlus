@@ -3,8 +3,8 @@ NOTE: a lot of stuff in this repo is currently unfinished, but progress is being
 
 This is a collection of programs written in Motorola 68K assembly\*, C, and TI-BASIC that significantly extend the capabilities of the TI-89 Titanium. Here is a list of the programs in this package and their capabilities:
 
- * [**CycleGen/CycleView:**](ccg) Generate and play back monochrome animations of graphs
- * [**Clicker:**](clicker) ~~An interactive recursive function executor~~
+ * [**CycleGen/CycleView:**](ccg_and_ccv) Generate and play back monochrome animations of graphs
+ * [**Clicker:**](clicker) An interactive recursive function executor
  * **Quickzoom:** An intuitive, aspect ratio-maintaining 2D graph panning/zooming program
  * **Spinner**: A program that interactively moves the 3D graph camera around the graph *only on the θ (theta) angle.* Very useful for "rotating" simple 3D graphs without distortion due to change in camera variables which should remain static.
  * [**dord:**](dord) Gets the ordinal date of a certain day - i.e., the *n*th day of a year for a given date
