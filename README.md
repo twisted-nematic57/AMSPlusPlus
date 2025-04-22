@@ -1,6 +1,9 @@
 # AMS++
 NOTE: a lot of stuff in this repo is currently unfinished, but progress is being made. Refer to [TODO.md](TODO.md)
 
+![CycleGen Demo - smooth 3D graph rotation](https://www.cemetech.net/media/archives/screenshots/2025/04/ezgif-2-db65c54fdd.gif)
+![CycleGen Demo - 2D hyperbola/ellipse transformations](https://www.cemetech.net/media/archives/screenshots/2025/04/hyperbola.gif)
+
 This is a collection of programs written in Motorola 68K assembly\*, C, and TI-BASIC that significantly extend the capabilities of the TI-89 Titanium. Here is a list of the programs in this package and their capabilities:
 
  * [**CycleGen/CycleView:**](ccg_and_ccv) Generate and play back monochrome animations of graphs
