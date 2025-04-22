@@ -26,7 +26,7 @@ New in Version 1.2: More precise measurement available if MathTools FlashApp is
 installed; simplified initial startup dialog
 
 Version 1.2.1 was released because I'm a dumbo who forgot to include
-mathtools.zip in release 1.2.
+mathtools.zip in release 1.2
 
 
 I. INSTALLATION
