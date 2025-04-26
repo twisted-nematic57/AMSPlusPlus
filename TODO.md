@@ -92,6 +92,8 @@
    - [X] update version numbers, reformat comments if necessary
    - [X] deter APD - introduce apdreset
    - [X] a bunch of other changes - see changelog in the readme for more info
+   - [ ] Make it possible to pause/resume graphing
+     - [ ] Make this compatible w/ the custom grapher
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
    - [X] improve performance in fastloop in Clicker
    - [X] revise comments, keycode indications
