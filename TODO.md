@@ -59,8 +59,6 @@
      - [X] Optimize time-tracking routine locations
      - [X] Delete `automeas` after finishing if auto = true
      - [X] Add a way to take a more precise measurement by using MathTool.timing()
-   - [ ] Resistor color code -> ohms converter
-     - [ ] Vice versa?
    - [X] DCLOCK wrapper
      - [X] Make DCLOCK work in a different folder (ZCLOCK)
      - [X] Make it not touch the modes at all (Use GDB)
@@ -78,22 +76,16 @@
 
 # misc
  - [X] sendkey: press a key from a BASIC program
-   - [X] arrow keys + 2nd + diamond
-   - [X] F1-F5 + Diamond F1
-   - [X] Enter (13), Copy + Paste (24576/16648), Clear (263)
+   - [X] ~~arrow keys + 2nd + diamond~~
+   - [X] ~~F1-F5 + Diamond F1~~
+   - [X] ~~Enter (13), Copy + Paste (24576/16648), Clear (263)~~
    - [X] Translate this into a BASIC program with heavy input validation - thanks Zeroko!!
- - [ ] next(num,dir): returns the next (towards +inf) FP representable value of approx(num). If dir < 0, returns the last representable value (towards -inf).
- - [ ] brutesolve: look for FP numbers that make an expression = to 0 (not newton's method!!)
-   - [ ] output a list of x smallest evaluations (output) along with their input-vals sorted by size?
- - [ ] brutesum: no matter what, using approximations or not, find the sum of a series
  - [X] CycleGen, the animation software
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
    - [X] update version numbers, reformat comments if necessary
    - [X] deter APD - introduce apdreset
    - [X] a bunch of other changes - see changelog in the readme for more info
-   - [ ] Make it possible to pause/resume graphing
-     - [ ] Make this compatible w/ the custom grapher
  - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
    - [X] improve performance in fastloop in Clicker
    - [X] revise comments, keycode indications
