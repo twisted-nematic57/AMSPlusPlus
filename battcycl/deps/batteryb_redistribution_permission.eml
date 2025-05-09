@@ -1,0 +1,174 @@
+Delivered-To: twisted.nematic57@gmail.com
+Received: by 2002:a05:6504:434e:b0:293:5e7b:83c5 with SMTP id n14csp1828535ltz;
+        Mon, 21 Apr 2025 08:18:44 -0700 (PDT)
+X-Received: by 2002:a05:6000:40ce:b0:39c:1257:dba8 with SMTP id ffacd0b85a97d-39efbaf201amr8733092f8f.56.1745248723991;
+        Mon, 21 Apr 2025 08:18:43 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1745248723; cv=none;
+        d=google.com; s=arc-20240605;
+        b=bfGX7TfbhvSd5N5dOVZsIuQds6m1WSsLMhEA1PLwnOpxKKgDVJ4GEh/f751yAaxNqz
+         C6bB7Qc1/s7lptlGHKnsXn8qXBh9Nv2eHH0C96So9IFVipOymYqTVZrVZJ/N+uh72sUc
+         lB1G8+N0hGe8jo3Ux3cVfEWUx3FHylRKvH4R5xFHwHSRrUXC3owBttbUdlHICWYmKPLh
+         sJOknmJjdbME2B4QgboUZOfHUXmg8mOvns0tUv8Px0R8bV5rnOSSI8RzesE4IqiSUty8
+         3c2/xC3s92T+XHrj/xoLxNZgXdrzfCozzdG+bMQYISdwBFnnbwTjonBC42rtYdwEaJil
+         icBQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=fxBQCx7xzO0VUDvk/Aa4J4321SNSzKqiyDeRXafl6ys=;
+        fh=IFyD+KQ8kuQg2ypuqebAHpYjZuydv6w4eDkQHDSmgpY=;
+        b=TPddlOgoYzGT22bYFsI/rB6i8hivT8uMG1KXqw4Uwu3xDuAO//v4Qv0gJyJZXPuUYp
+         bOQT3fPha3BhnhUN2zlvX/C8yFU+E2zJPR1DBFFEZ3sMv7e1qy4NOuXEfJxCArXo5zV3
+         292dJF3p6a2m+rih1rYBawYb1Pbzcgno0ZSlGVtA/KwQ/bJQJrLQD7zQsE/DwFMhnr8P
+         714Yhm4XGkY52Uo9xrRNNNfNqwelysGJi7bif7bf10Rg+8RkzjQdI37pXHtXeU9yMjCP
+         Z+mfbb4HE3CwUn/tMu8jwN5gSHlIDKJ8XnMddLJOl6rs+QvX5UAn6XqYWtY5yhauE4qd
+         I8Sw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=IksYzWbJ;
+       spf=pass (google.com: domain of vetruvet@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=vetruvet@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <vetruvet@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 5b1f17b1804b1-44069946f57sor22972735e9.1.2025.04.21.08.18.43
+        for <twisted.nematic57@gmail.com>
+        (Google Transport Security);
+        Mon, 21 Apr 2025 08:18:43 -0700 (PDT)
+Received-SPF: pass (google.com: domain of vetruvet@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20230601 header.b=IksYzWbJ;
+       spf=pass (google.com: domain of vetruvet@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=vetruvet@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20230601; t=1745248723; x=1745853523; dara=google.com;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=fxBQCx7xzO0VUDvk/Aa4J4321SNSzKqiyDeRXafl6ys=;
+        b=IksYzWbJxOnfZZGuJVJKBkcDt0U58wO2jsGd05KntvPyrhL7RTspP6H8M7qtzhCOPR
+         nkEtewJ2mkdmiNF9sO2UyFmSh0eGDuQnV2N9Qd+RWwXN3MlOwgfVwLqO+36deP1C+Ufa
+         GF2s4OodIDaFQJVs8QbVr5uI/Jswn7MJCHxoJJnSoeO4F65xi9gM5ELFX9Oxhrr64x7w
+         TEx0H5JMwQs3TQmI59UUQAnlOgYmt3ju66Y9MtDhYeOzbtWNVV5oxIVZT0Llh+MpbbMV
+         eitV2MAqAfvPHM/aheDb76TdA+h5tvXpCQrkeL7sVnbL0emKOGVVirMh7eRnKj+y3gO8
+         TvVA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20230601; t=1745248723; x=1745853523;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :x-gm-message-state:from:to:cc:subject:date:message-id:reply-to;
+        bh=fxBQCx7xzO0VUDvk/Aa4J4321SNSzKqiyDeRXafl6ys=;
+        b=QwG0rU4zodMQmbB896xXbaR8IFPqbreut9+uBavqgncSX9Ymoco6LVFdKj3EDEtMx6
+         SgUwhilvA7LQmH5mSLZVRwDjYRcl3IXqBvXuzi2xalrQ4TaJt8FoGzaFV/ymY9NMGHz3
+         brN1Td527EVbpeEPGMvvk8S7fAtMGvx83qXvZuFp1FkKhoyTqgSmVS4eLuxfSUTD7wfX
+         vPqn+VD5rYuzJ7VrYaua3Las/99lWOHiQwoG1Mph+y1VnCLN6KPsswrsAEt6GO73anir
+         z6/wL9SX1//mNYe4CR6ssmAJ1KdAMmx54+hRYG5a5EsS7g1a37DRwbuPmSWvdtW7tXTm
+         lplA==
+X-Gm-Message-State: AOJu0YwIAFgHDNCZITtFaGfN7irxOUBhJQ+8C+/vmo1cqoGE+mawTYsh
+	qbpBB7C18n9+uJNWzqsfhXfUrxcN7ByTX8J+UraazqtjntwLpBs3+d4k1MEmKWn5Xg5kFHQf5wT
+	CLwtVdYBmCCU4aTdDwzEgwTu4gGL+XJrr
+X-Gm-Gg: ASbGnct44B5YNnr/CrU5xYxI1kTWiNnHf1Ybfgcl8fT1mLyKTDDwQbc8C1R779+eYyO
+	V1kZUEzOxVOmHN1e/rJ/BcjUdi5ExCrVbFI9cecWnfcnGQG4MjnnseC5gWVYR+L5gnV09MNQX25
+	8LQ747XLA5diyoAFCziCNg6HnlTTbfMphpjWqcSjZPaAsks6e8h/KzIW29
+X-Google-Smtp-Source: AGHT+IHdpMCkSdFpTmNfJNcQSsxjfT4zcs5ZpKCdCUP8mzlebe4ucgaYmpg0cbiSOM45UtEK6h+quuprUSY9U/7bGKg=
+X-Received: by 2002:a05:6000:40ce:b0:39c:16a0:feeb with SMTP id
+ ffacd0b85a97d-39efba5b7b5mr9912364f8f.27.1745248723161; Mon, 21 Apr 2025
+ 08:18:43 -0700 (PDT)
+MIME-Version: 1.0
+References: <CAE9qQY=e_cZsOZugDS8+pcGKe5p8WGJeDBRJir6gRFkk5YZrBg@mail.gmail.com>
+In-Reply-To: <CAE9qQY=e_cZsOZugDS8+pcGKe5p8WGJeDBRJir6gRFkk5YZrBg@mail.gmail.com>
+From: Val Trubachev <vetruvet@gmail.com>
+Date: Mon, 21 Apr 2025 10:18:31 -0500
+X-Gm-Features: ATxdqUGBY9eOsbR-hYoWm4M9g1HjclJspK9UyM5GwoaZVOGC2y1EsYN2jMEZo5g
+Message-ID: <CAMw0CWnV2caixm7YXnzszugRG+FasFyY594eGma0P1D4=tbbrg@mail.gmail.com>
+Subject: Re: Battery Sensor Licensing & Source Code
+To: Akshat Singh <twisted.nematic57@gmail.com>
+Content-Type: multipart/alternative; boundary="000000000000305b8e06334b627c"
+
+--000000000000305b8e06334b627c
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Hi Akshat,
+
+You're welcome to use this program as you see fit. Honestly, I'd completely
+forgotten that I had published this.
+I looked for the source code across my backups and archives, but I was
+unable to locate it. If you want to, feel free to reverse-engineer the
+binaries
+
+Best regards,
+Val
+
+On Sat, Apr 19, 2025 at 3:26=E2=80=AFPM Akshat Singh <twisted.nematic57@gma=
+il.com>
+wrote:
+
+> Hello,
+>
+> I am planning to use your Battery Sensor program, published to ticalc.org
+> <https://www.ticalc.org/archives/files/fileinfo/388/38883.html>, in one
+> of my TI-89 Titanium programs. My program is a rechargeable battery cycle
+> tracker, and it's convenient to have it display the current battery volta=
+ge
+> in one of the dialogs.
+>
+> I plan to distribute my program on cemetech.net
+> <https://www.cemetech.net/>, a calculator programming site. My BASIC code
+> will be public domain. I'm requesting permission to redistribute your
+> program, Battery Sensor, along with it, so that users don't have to
+> download two packages to install the program. I can specify that your
+> program isn't public domain, if you wish.
+>
+> Also, I'd like to see the source code for reference. I would
+> really appreciate it if I could distribute the source code along with my
+> program as well, but it's okay if that's not possible.
+>
+> Thanks for your time.
+>
+> --
+> Sincerely,
+> *Akshat Singh* (twisted.nematic57@gmail.com) [he/him | they/them]
+> Founder of Ardent Development <https://github.com/ardent-development>
+>
+
+--000000000000305b8e06334b627c
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi Akshat,<div><br></div><div>You&#39;re welcome to use th=
+is program as you see fit. Honestly, I&#39;d completely forgotten that I ha=
+d published this.</div><div>I looked for the source code across my backups =
+and archives, but I was unable to locate it. If you want to, feel free to r=
+everse-engineer the binaries</div><div><br></div><div>Best regards,</div><d=
+iv>Val</div></div><br><div class=3D"gmail_quote gmail_quote_container"><div=
+ dir=3D"ltr" class=3D"gmail_attr">On Sat, Apr 19, 2025 at 3:26=E2=80=AFPM A=
+kshat Singh &lt;<a href=3D"mailto:twisted.nematic57@gmail.com">twisted.nema=
+tic57@gmail.com</a>&gt; wrote:<br></div><blockquote class=3D"gmail_quote" s=
+tyle=3D"margin:0px 0px 0px 0.8ex;border-left:1px solid rgb(204,204,204);pad=
+ding-left:1ex"><div dir=3D"ltr"><div>Hello,</div><div><br></div><div>I am p=
+lanning to use your Battery Sensor program, <a href=3D"https://www.ticalc.o=
+rg/archives/files/fileinfo/388/38883.html" target=3D"_blank">published to t=
+icalc.org</a>, in one of my TI-89 Titanium programs. My program is a rechar=
+geable battery cycle tracker,=C2=A0and it&#39;s convenient to have it displ=
+ay the current battery voltage in one of the dialogs.</div><div><br></div><=
+div>I plan to distribute my program on <a href=3D"https://www.cemetech.net/=
+" target=3D"_blank">cemetech.net</a>, a calculator programming site. My BAS=
+IC code will be public domain. I&#39;m requesting permission to redistribut=
+e your program, Battery Sensor, along with it, so that users don&#39;t have=
+ to download two packages to install the program. I can specify that your p=
+rogram isn&#39;t public domain, if you wish.</div><div><br></div><div>Also,=
+ I&#39;d like to see the source code for reference. I would really=C2=A0app=
+reciate it if I could distribute the source code along with my program as w=
+ell, but it&#39;s okay if that&#39;s=C2=A0not possible.</div><div><br></div=
+><div>Thanks for your time.</div><div><br></div><span class=3D"gmail_signat=
+ure_prefix">-- </span><br><div dir=3D"ltr" class=3D"gmail_signature"><div d=
+ir=3D"ltr">Sincerely,<div><b>Akshat Singh</b>=C2=A0(<font face=3D"monospace=
+"><a href=3D"mailto:twisted.nematic57@gmail.com" target=3D"_blank">twisted.=
+nematic57@gmail.com</a></font>) [<span style=3D"color:rgb(102,0,0)">he/him=
+=C2=A0</span><font color=3D"#444444">|</font><span style=3D"color:rgb(102,0=
+,0)">=C2=A0they/them</span><font color=3D"#000000">]</font></div><div>Found=
+er of <span style=3D"background-color:rgb(255,255,255)"><font color=3D"#990=
+0ff"><a href=3D"https://github.com/ardent-development" target=3D"_blank">Ar=
+dent Development</a></font></span></div></div></div></div>
+</blockquote></div>
+
+--000000000000305b8e06334b627c--
