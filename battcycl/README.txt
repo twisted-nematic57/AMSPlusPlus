@@ -41,8 +41,9 @@ Send `battcycl.89p` to your calculator. This is the main program.
 All of the below should be stored in the `misc` folder on-calc. It's recommended
 to keep them archived.
 
-Now go to the "deps" directory and enter the folder that best matches the
- calculator model you have. Then send all files in that folder to your calc.
+Now go to the "deps" directory. Send the files starting with "dord", "idbd", and
+ "padstr". Then, enter the folder that best matches the calculator model you
+ have. Then send all files in that folder to your calc.
 
 Information about dependencies:
  - `statline`: Manipulates the status line.
