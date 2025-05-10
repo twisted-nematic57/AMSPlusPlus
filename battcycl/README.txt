@@ -70,6 +70,8 @@ When you launch the program, it'll show a three-item menu.
    located at `mem\batt`.
     - You should avoid editing `mem\batt` manually unless you are fixing a
       mistake as a result of recording a cycle before setting your clock.
+    - Don't attempt using the below options if you haven't recorded a single
+      cycle yet.
 
  * Plot all cycles: This option will plot all battery cycles. This is helpful to
    visualize the long-term rate at which your calc is consuming batteries.
@@ -88,10 +90,12 @@ When you launch the program, it'll show a three-item menu.
       points graphically or do something with the numerical data in the `mem`
       folder.
 
- * Delete plot data: This option will delete the two lists in the `mem` folder
-   that are saved by pressing [STO>] while visualizing cycle data with the
-   previous option.
-    - The variables to be deleted are `mem\xplot` and `mem\yplot`.
+ * Recover graph: This option will recover the state of the graph that was
+   present before you used the cycle visualization feature, delete the two lists
+   in the `mem` folder, and disable Plot #9, which is used by the program.
+    - The variables to be deleted are `mem\xplot`, `mem\yplot`, and `ΦΦΦbak`.
+    - Plot #9 is disabled separately as plots are not influenced by nor saved in
+      GDBs.
 
 
 III. BATTERY SENSOR INFORMATION
