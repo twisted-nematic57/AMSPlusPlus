@@ -94,6 +94,8 @@ When you launch the program, it'll show a three-item menu.
    present before you used the cycle visualization feature, delete the two lists
    in the `mem` folder, and disable Plot #9, which is used by the program.
     - The variables to be deleted are `mem\xplot`, `mem\yplot`, and `ΦΦΦbak`.
+      The plot lists are created when [STO>] is pressed while the program is
+      displaying a visualization.
     - Plot #9 is disabled separately as plots are not influenced by nor saved in
       GDBs.
 
