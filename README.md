@@ -3,6 +3,7 @@ NOTE: a lot of stuff in this repo is currently unfinished, but progress is being
 
 ![CycleGen Demo - smooth 3D graph rotation](https://www.cemetech.net/media/archives/screenshots/2025/04/ezgif-2-db65c54fdd.gif)
 ![CycleGen Demo - 2D hyperbola/ellipse transformations](https://www.cemetech.net/media/archives/screenshots/2025/04/hyperbola.gif)
+![Battery Cycle Tracker showing visualization of all cycles recorded on my calculator](https://www.cemetech.net/media/archives/screenshots/2025/05/Screenshot_2025-05-09_205058.png)
 
 This is a collection of programs written in Motorola 68K assembly\*, C, and TI-BASIC that significantly extend the capabilities of the TI-89 Titanium. Here is a list of the programs in this package and their capabilities:
 
