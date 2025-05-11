@@ -32,6 +32,7 @@
      - [X] Remove unnecessary intro at the top
      - [X] Make a tool that shows the total number of cycles in a "mountain" graph
      - [X] Make it possible to store the data after exiting (STO key)
+     - [X] Show "PAUSE" in the status line when visualizing data
    - [X] 68K clock frequency measurement utility
      - [X] make it possible to use it programmatically by setting/getting variables
      - [X] use built in 68K BASIC functions to keep track of time, you fool!!

@@ -1,6 +1,6 @@
-/*** Battery Cycle Tracker 1.2 ************************************************\
+/*** Battery Cycle Tracker 1.2.1 **********************************************\
  * Author:         twisted_nematic57                                          *
- * Date:           05/09/2025 [MM-DD-YYYY]                                    *
+ * Date:           05/11/2025 [MM-DD-YYYY]                                    *
  * Special Thanks: Val Trubachev (vetruvet@gmail.com)                         *
  * License:        Public Domain (except when otherwise stated)               *
  * Product Type:   BASIC program                                              *
@@ -143,6 +143,9 @@ Also, permission to use batteryb was given to me specially by the author. See
 
 
 IV. CHANGELOG
+
+ * Battery Cycle Tracker v1.2.1: sets the status bar's activity indicator to
+   "PAUSE" when visualizing cycle data
 
  * Battery Cycle Tracker v1.2: adds support for visualizing cycle data
     - DOC: create documentation
