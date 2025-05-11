@@ -11,7 +11,8 @@ This is a collection of programs written in Motorola 68K assembly\*, C, and TI-B
  * [**Clicker:**](clicker) An interactive recursive function executor
  * **Quickzoom:** An intuitive, aspect ratio-maintaining 2D graph panning/zooming program
  * **Spinner**: A program that interactively moves the 3D graph camera around the graph *only on the θ (theta) angle.* Very useful for "rotating" simple 3D graphs without distortion due to change in camera variables which should remain static.
- * [**Battery Cycle Tracker:**](battcycl) A small BASIC utility that allows you to track and visualize the cycling of your calculator's rechargeable batteries.
+ * [**Battery Cycle Tracker:**](battcycl) A small BASIC utility that allows you to track and visualize the cycling of your calculator's rechargeable batteries. Can also b used to visualize how often you throw away and replace alkaline batteries.
+   - Environmental Notice: Please use rechargeable NiMH batteries in your TI-68Ks whenever you can, as they are rather power-hungry calcs.
  * [**dord:**](dord) Gets the ordinal date of a certain day - i.e., the *n*th day of a year for a given date
  * [**idbd:**](idbd) Gets the number of days between two ISO 8601-formatted dates
  * [**padstr:**](padstr) A convenient, powerful little string utility that pads and truncates strings
