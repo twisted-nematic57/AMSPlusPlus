@@ -46,10 +46,12 @@
      - [X] Regular clock
      - [X] Timer (dialog input)
      - [X] Stopwatch
-   - [x] Initialization
+   - [X] Initialization
      - [X] load AMS Extender, PreOS, etc. RCL the GDB and load the zooms. Set contrast. Yadda yadda.
      - [X] Date/time setting utility
        - [X] at the end, display the time until user presses any key to exit
+   - [X] neofetch clone
+     - [ ] remove dependency on padstr
 
 # direct AMS extensions
  - [ ] Custom units
