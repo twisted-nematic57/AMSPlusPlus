@@ -15,7 +15,7 @@ the Window Editor.
 
 I. INSTALLATION
 
-Send spinner.89p to your calculator. You may store it in any folder; it should
+Send spinner.89p to your calculator. Keep it in the `misc` folder; it should
 also be archived.
 
 Then send sendstr.89z and statline.89z from the "_deps" directory. They should
@@ -31,8 +31,9 @@ reason for them not to be.
       happen from the use of this program.  Because it is
       a program to enhance basic programs it is freely
       distributable."
- * statline is a public domain C program by me that handles manipulation of the
-   status line. https://www.cemetech.net/downloads/files/2600/x3320
+ * statline is a public domain C program by me that enables BASIC programs to
+   manipulate the status line.
+   https://www.cemetech.net/downloads/files/2600/x3320
 
 
 II. USAGE
@@ -54,7 +55,7 @@ current `eyeθ` value in the status line.
  * Pressing [ESC] or [CLEAR] will exit the program and keep the graph screen
    visible. Pressing [HOME] will exit the program and return to the Home Screen.
 
-NOTE: The calculator is not the fastest at re-rendering 3D graphs. It is also
+NOTE: The calculator is not the fastest at rendering 3D graphs. It is also
 impossible to use the double-buffering mechanism that the OS rotation routines
 use from pure BASIC, so you will see the graph re-render itself every time you
 rotate it.

@@ -1,6 +1,6 @@
 /*** Quickzoom 1.0 ************************************************************\
  * Author:         twisted_nematic57                                          *
- * Date:           05/17/2025 [MM-DD-YYYY]                                    *
+ * Date:           05/18/2025 [MM-DD-YYYY]                                    *
  * License:        Public Domain                                              *
  * Product Type:   Hybrid BASIC/ASM program                                   *
  * Platform:       TI-89 Titanium - can be ported to other Motorola 68000     *
@@ -25,13 +25,16 @@ methods are:
 
 I. INSTALLATION
 
-Send quiczoom.89p to your calculator. Keep it in any folder and archived.
+Send quiczoom.89p to your calculator. Keep it in the `misc` folder, and keep it
+archived. (The "k" is gone because I like keeping variable and filenames
+consistent + variable names are limited to 8 chars.)
 
 Then send statline.89z from the "_deps" directory. It should be in the `misc`
 folder on-calc, and should be archived.
 
- * statline is a public domain C program by me that handles manipulation of the
-   status line. https://www.cemetech.net/downloads/files/2600/x3320
+ * statline is a public domain C program by me that enables BASIC programs to
+   manipulate the status line.
+   https://www.cemetech.net/downloads/files/2600/x3320
 
 There's another dependency you'll have to download yourself, called Flib 3.2:
 https://www.ticalc.org/pub/89/asm/libs/flib.zip
@@ -39,20 +42,20 @@ If the file is no longer available please email me at:
 twisted.nematic57 {at} {Google's mail service}.com and I will send it to you. I
 didn't include it with this package because then I'd have to make it
 GPL-licensed, which I think is a bit overkill for a simple calculator program.
-  * Both of the Flib binaries (ending in ".89z") should be in the `misc` folder
-    on-calc and should be archived. Strictly speaking, Quickzoom only depends on
-    Flib2 but some other programs may depend on the other binary so it's not
-    good practice to have only one.
+ * Both of the Flib binaries (ending in ".89z") should be in the `misc` folder
+   on-calc and should be archived. Strictly speaking, Quickzoom only depends on
+   Flib2 but some other programs may depend on the other binary so it's not good
+   practice to have only one.
 
 
 II. USAGE
 
+The first time you launch Quickzoom, you'll get a prompt to create a new folder.
+Press [ENTER] when it comes up.
+
 Launching the program will cause the Graph Screen to be displayed and a
 rectangle to be drawn at the edges of the window. This rectangle is the "zoom
 box".
-
-The first time you launch Quickzoom, you'll get a prompt to create a new folder.
-Press [ENTER] when it comes up.
 
  * Using the D-pad (arrow keys) will move the box around. Its movement speed
    will increase a little if you hold one or two arrow keys down. If you want to
@@ -81,8 +84,10 @@ Press [ENTER] when it comes up.
       can be overwritten if you choose.
     - Pressing [BACKSPACE] will clear all zoom slots.
     - If you want to delete a specific zoom slot, you can execute this command
-      on the Home Screen, provided that x = the zoom slot number:
+      on the Home Screen, where `x` = the zoom slot number:
         newMat(1,6) -> ωprgmvrs\zooms[x]
+      This command basically resets an entire row to 0s, which will make the
+      program consider the slot as blank.
       (The "->" is an STO symbol and the "ω" is a Greek lowercase omega)
 
  * Pressing [ENTER] will change the active viewing window to the position of the
@@ -97,11 +102,11 @@ to be used in split-screen modes. However, Quickzoom seems to work mostly fine
 anyways on different screen sizes, so it may not be a huge problem.
 
 If you want to use this on a TI-92/Voyage 200, just open the program with the
-Program Editor and replace the first two "158"s to your your viewing window's
-width in pixels, and the first two "76"es to its height in pixels.
+Program Editor and replace the first two "158"s to your viewing window's width
+in pixels, and the first two "76"es to its height in pixels.
 
 
-III. DATA STORAGE
+III. DATA STORAGE FORMAT
 
 All the zoom slots and the previous zoom window data is stored in a 6x10 matrix,
 `zooms`, in a folder called `ωprgmvrs`. It takes up 624 bytes of memory when
@@ -111,8 +116,7 @@ modified every time you confirm a new zooming window in Quickzoom.)
 Each column is responsible for storing each of the following data items, in this
 order left-to-right: {xmin,xmax,ymin,ymax,xscl,yscl}. Rows 1-9 are each of the
 zoom slots. Row 10 is the "last zooming window" slot which is modified every
-time a new zoom is confirmed with [ENTER] during execution of the program; its
-window is recalled upon pressing [0]. 
+time a new zoom is confirmed; its window is recalled upon pressing [0]. 
 
 
 IV. CHANGELOG (LATEST-FIRST)
