@@ -58,11 +58,16 @@ I launch it with `misc\neofetch()`. You can also call it from within another
 program, of course.
 
 
-III. CODE MESSINESS
+III. INTEGRATIONS
 
-The code for neofetch68k is quite ugly. It was out of my control, however,
-because of the limitations of Flib and AMS - I had to fit all the GUI code into
-a single line, a single Flib call.
+aa
 
 
+IV. CODE MESSINESS
+
+Half of the code for neofetch68k is quite ugly. In my defense, it was out of my
+control because of the limitations imposed by Flib and AMS - I had to fit all
+the GUI code into a single line, a single Flib call. Of course it's ugly.
+
+See "_computer_readable/README_neofetch.txt" for more info about that.
 
