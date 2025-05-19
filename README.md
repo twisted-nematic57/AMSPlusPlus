@@ -4,6 +4,7 @@ NOTE: a lot of stuff in this repo is currently unfinished, but progress is being
 ![CycleGen Demo - smooth 3D graph rotation](_images/ccg0.gif)
 ![CycleGen Demo - 2D hyperbola/ellipse transformations](_images/ccg1.gif)
 ![Quickzoom Demo - Zooming into some trig functions](_images/quiczoom.gif)
+![neofetch68k Demo](_images/neofetch.png)
 ![Battery Cycle Tracker showing visualization of all cycles recorded on my calculator as of 5/9/25](_images/battcycl.png)
 
 This is a collection of programs written in Motorola 68K assembly\*, C, and TI-BASIC that significantly extend the capabilities of the TI-89 Titanium. Here is a list of the programs in this package and their capabilities:
@@ -13,6 +14,7 @@ This is a collection of programs written in Motorola 68K assembly\*, C, and TI-B
  * [**Quickzoom/Spinner:**](quickzoom_and_spinner) Some highly intuitive programs that make it easier to navigate various 2D and 3D graphs
  * [**Battery Cycle Tracker:**](battcycl) A small BASIC utility that allows you to track and visualize the cycling of your calculator's rechargeable batteries. Can also be used to visualize how often you throw away and replace alkaline batteries
    - Environmental Notice: Please use rechargeable NiMH batteries in your TI-68Ks whenever you can, as they are rather power-hungry calcs
+ * [**neofetch68k:**](neofetch68k) A Neofetch clone for the TI-89 Titanium 
  * [**dord:**](dord) Gets the ordinal date of a certain day - i.e., the *n*th day of a year for a given date
  * [**idbd:**](idbd) Gets the number of days between two ISO 8601-formatted dates
  * [**padstr:**](padstr) A convenient, powerful little string utility that pads and truncates strings
