@@ -38,6 +38,9 @@ reason for them not to be.
 
 II. USAGE
 
+It's recommended to launch Spinner as a keyboard program. (The included file
+`kbdprgm5.89p` integrates Spinner and Quickzoom into one key combination.)
+
 When Spinner is launched, it will switch to the Graph Screen and display the
 current `eyeθ` value in the status line.
 

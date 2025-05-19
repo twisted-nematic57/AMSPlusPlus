@@ -50,6 +50,9 @@ GPL-licensed, which I think is a bit overkill for a simple calculator program.
 
 II. USAGE
 
+It's recommended to launch Quickzoom as a keyboard program. (The included file
+`kbdprgm5.89p` integrates Spinner and Quickzoom into one key combination.)
+
 The first time you launch Quickzoom, you'll get a prompt to create a new folder.
 Press [ENTER] when it comes up.
 
