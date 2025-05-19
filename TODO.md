@@ -52,7 +52,7 @@
      - [X] Date/time setting utility
        - [X] at the end, display the time until user presses any key to exit
    - [X] neofetch clone
-     - [ ] remove dependency on padstr
+     - [X] remove dependency on padstr
 
 # direct AMS extensions
  - [ ] Custom units

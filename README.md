@@ -1,9 +1,9 @@
 # AMS++
 NOTE: a lot of stuff in this repo is currently unfinished, but progress is being made. Refer to [TODO.md](TODO.md)
 
-![CycleGen Demo - smooth 3D graph rotation](https://www.cemetech.net/media/archives/screenshots/2025/04/ezgif-2-db65c54fdd.gif)
-![CycleGen Demo - 2D hyperbola/ellipse transformations](https://www.cemetech.net/media/archives/screenshots/2025/04/hyperbola.gif)
-![Battery Cycle Tracker showing visualization of all cycles recorded on my calculator as of 5/9/25](https://www.cemetech.net/media/archives/screenshots/2025/05/Screenshot_2025-05-09_205058.png)
+![CycleGen Demo - smooth 3D graph rotation](_images/ccg0.gif)
+![CycleGen Demo - 2D hyperbola/ellipse transformations](_images/ccg1.gif)
+![Battery Cycle Tracker showing visualization of all cycles recorded on my calculator as of 5/9/25](_images/battcycl.png)
 
 This is a collection of programs written in Motorola 68K assembly\*, C, and TI-BASIC that significantly extend the capabilities of the TI-89 Titanium. Here is a list of the programs in this package and their capabilities:
 
@@ -16,7 +16,7 @@ This is a collection of programs written in Motorola 68K assembly\*, C, and TI-B
  * [**idbd:**](idbd) Gets the number of days between two ISO 8601-formatted dates
  * [**padstr:**](padstr) A convenient, powerful little string utility that pads and truncates strings
 
-They can most likely be ported to other platforms with little effort, however that has not been done yet as the author of most of these programs does not have a TI-92 \[Plus\]/Voyage 200.
+They can most likely be ported to other platforms with little effort, however that has not been done yet as the author of most of these programs does not have a TI-92 [Plus]/Voyage 200.
 
 ---
 
