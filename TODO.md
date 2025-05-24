@@ -63,6 +63,7 @@
    - [X] ~~F1-F5 + Diamond F1~~
    - [X] ~~Enter (13), Copy + Paste (24576/16648), Clear (263)~~
    - [X] Translate this into a BASIC program with heavy input validation - thanks Zeroko!!
+   - [ ] clear up the moveleft licensing stuff (refer to Sam's Cemetech post...)
  - [X] CycleGen, the animation software
    - [X] fix undefined maxsteps w/fillmem issue
    - [X] update/modernize (also CycleView and Clicker)
