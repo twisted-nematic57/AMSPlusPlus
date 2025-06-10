@@ -1,6 +1,6 @@
-/*** Spinner 1.0 **************************************************************\
+/*** Spinner 1.1 **************************************************************\
  * Author:         twisted_nematic57                                          *
- * Date:           05/18/2025 [MM-DD-YYYY]                                    *
+ * Date:           05/24/2025 [MM-DD-YYYY]                                    *
  * License:        Public Domain (unless otherwise stated)                    *
  * Product Type:   Hybrid BASIC/ASM program                                   *
  * Platform:       TI-89 Titanium - compatibility with other Motorola 68000   *
@@ -10,7 +10,8 @@
 Spinner is a program that enables you to rotate 3D graphs left or right (on the
 θ-axis) without distorting the view. It also lets you type in custom values for
 `eyeθ` (the viewing angle around the vertical axis) without having to switch to
-the Window Editor.
+the Window Editor. Perfect for quickly getting an idea of the shape of various
+3D graphs.
 
 
 I. INSTALLATION
@@ -22,10 +23,10 @@ Then send sendstr.89z and statline.89z from the "_deps" directory. They should
 both be in the `misc` folder on-calc, and should be archived since there's no
 reason for them not to be.
 
- * sendstr is a program by Samuel Stearley (sstear70@calvin.edu;
-   http://www.geocities.com/sstear70/) that enables BASIC programs to send
-   arbitrary strings to input boxes in the OS GUI. It is licensed as "freely
-   distributable" as per Samuel. Original licensing statement:
+ * sendstr is a program by Samuel Stearley (samuel@stearley.org) that enables
+   BASIC programs to send arbitrary strings to input boxes in the OS GUI. It is
+   licensed as "freely distributable" as per Samuel. Original licensing
+   statement:
     > "This program is freeware so Samuel Stearley is not
       responsible or liable for anything that might
       happen from the use of this program.  Because it is
@@ -65,6 +66,10 @@ rotate it.
 
 
 III. CHANGELOG (LATEST-FIRST)
+
+ * Spinner 1.1: no program changes, some doc changes
+    - DOC: update documentation with Sam's new email
+    - DOC: also add a possible broad sample usecase at the top
 
  * Spinner 1.0: initial release, basic rotation features implemented
     - DOC: create documentation
