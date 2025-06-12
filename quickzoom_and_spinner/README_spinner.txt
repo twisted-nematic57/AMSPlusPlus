@@ -1,10 +1,10 @@
 /*** Spinner 1.1 **************************************************************\
  * Author:         twisted_nematic57                                          *
- * Date:           05/24/2025 [MM-DD-YYYY]                                    *
+ * Date:           06/11/2025 [MM-DD-YYYY]                                    *
  * License:        Public Domain (unless otherwise stated)                    *
  * Product Type:   Hybrid BASIC/ASM program                                   *
  * Platform:       TI-89 Titanium - compatibility with other Motorola 68000   *
- *                 based TI calculators possible, not guaranteed.             *
+ *                 based TI calculators possible; not guaranteed.             *
 \******************************************************************************/
 
 Spinner is a program that enables you to rotate 3D graphs left or right (on the
@@ -68,8 +68,10 @@ rotate it.
 III. CHANGELOG (LATEST-FIRST)
 
  * Spinner 1.1: no program changes, some doc changes
-    - DOC: update documentation with Sam's new email
+    - DOC: update documentation with Sam's new email, remove legal gray area
     - DOC: also add a possible broad sample usecase at the top
+    - DOC: version number is updated to 1.1 in computer-readable source, but
+           code is unchanged
 
  * Spinner 1.0: initial release, basic rotation features implemented
     - DOC: create documentation
