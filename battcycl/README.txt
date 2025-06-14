@@ -1,6 +1,6 @@
-/*** Battery Cycle Tracker 1.2.1 **********************************************\
+/*** Battery Cycle Tracker 1.3 ************************************************\
  * Author:         twisted_nematic57                                          *
- * Date:           05/11/2025 [MM-DD-YYYY]                                    *
+ * Date:           06/14/2025 [MM-DD-YYYY]                                    *
  * Special Thanks: Val Trubachev (vetruvet@gmail.com)                         *
  * License:        Public Domain (except when otherwise stated)               *
  * Product Type:   BASIC program                                              *
@@ -52,9 +52,10 @@ Information about dependencies:
      https://www.cemetech.net/downloads/files/2619/x3361
  - `dord`: Converts ISO dates to ordinal dates.
      https://www.cemetech.net/downloads/files/2616/x3358
- - `padstr`: Pads strings for formatting.
+ - `padstr`: Pads/truncates strings.
      https://www.cemetech.net/downloads/files/2618/x3360
- - `batteryb`: Measures battery voltage. See III. BATTERY SENSOR INFORMATION.
+ - `batteryb`: Returns a general idea of present battery voltage. See section
+   III. BATTERY SENSOR INFORMATION for more info.
      https://www.ticalc.org/archives/files/fileinfo/388/38883.html
 
 
@@ -66,10 +67,12 @@ any way you like.
 When you launch the program, it'll show a three-item menu.
 
  * Record New Cycle: after your batteries are finished charging and you set the
-   time on your calc, you can use this to record a new cycle into the list
-   located at `mem\batt`.
+   time and date on your calc, you can use this to record a new cycle into the
+   database (a simple list) located at `mem\batt`.
     - You should avoid editing `mem\batt` manually unless you are fixing a
       mistake as a result of recording a cycle before setting your clock.
+    - The documentation for the format of `mem\batt` can be found in IV. DATA
+      STORAGE FORMAT.
     - Don't attempt using the below options if you haven't recorded a single
       cycle yet.
 
@@ -112,9 +115,11 @@ There are two main problems:
  * The hardware voltmeter is very poorly documented and I don't know the exact
    voltage ranges that trigger it to fall above or below the thresholds that
    cause the integer reading to change. However, I know for sure that voltages
-   >(1.10*4)V will definitely return a 7.
- * An NiMH battery, the most common chemistry of rechargeable AAA battery, has
-   an extremely flat voltage curve (compared to alkalines) that hovers at
+   >(1.10*4)V will definitely return a 7. By the time your batteries reach 1.10V
+   each, it is about time to start worrying about their remaining life, alkaline
+   or not.
+ * A NiMH battery, the most common chemistry of rechargeable AAA battery, has an
+   extremely flat discharge voltage curve (compared to alkalines) that hovers at
    ~1.28-1.22V for most of its usable life. This means that if you get a 6 or
    below from the reading, your NiMH batteries are on their last legs.
 
@@ -142,7 +147,22 @@ Also, permission to use batteryb was given to me specially by the author. See
    advice.]
 
 
-IV. CHANGELOG
+IV. DATA STORAGE FORMAT
+
+The only "file" that's used by the program to store battery cycle data is a list
+of strings at `mem\batt`. Each string is formatted as such:
+ "MM/DD/YY @ [H]H:MM [AM/PM]"
+   - "MM/DD/YY" is the basic date format that the calculator will return from
+     the getDtStr(1)` function.
+   - "[H]H" is the hou om
+
+
+V. CHANGELOG
+
+ * Battery Cycle Tracker v1.3: some documentation additions and bug fixes
+    - CODE: make getDtStr() always return MM/DD/YY (bugfix for those who use
+            different date formats)
+    - DOC: add documentation for the format of `mem\batt`
 
  * Battery Cycle Tracker v1.2.1: sets the status bar's activity indicator to
    "PAUSE" when visualizing cycle data
