@@ -25,7 +25,7 @@ packs. You can do this if you wish.
 
 I have not tested this on physical TI-92 Plus/V200 units because I do not own
 any. I especially cannot guarantee this program will work flawlessly on those
-models.
+models. I also cannot guarantee it will work on AMS <3.10.
 
 Environmental Notice: If you still use disposable batteries with your TI-68k
 calculators, please consider switching over to rechargeable ones. They're better
@@ -46,16 +46,16 @@ Now go to the "deps" directory. Send the files starting with "dord", "idbd", and
  have. Then send all files in that folder to your calc.
 
 Information about dependencies:
- - `statline`: Manipulates the status line.
+ - statline: Manipulates the status line.
      https://www.cemetech.net/downloads/files/2600/x3320
- - `idbd`: Calculates date differences. Depends on `dord` and `padstr`.
+ - idbd: Calculates date differences. Depends on dord and padstr.
      https://www.cemetech.net/downloads/files/2619/x3361
- - `dord`: Converts ISO dates to ordinal dates.
+ - dord: Converts ISO dates to ordinal dates.
      https://www.cemetech.net/downloads/files/2616/x3358
- - `padstr`: Pads/truncates strings.
+ - padstr: Pads/truncates strings.
      https://www.cemetech.net/downloads/files/2618/x3360
- - `batteryb`: Returns a general idea of present battery voltage. See section
-   III. BATTERY SENSOR INFORMATION for more info.
+ - batteryb: Returns a general idea of present battery voltage. See section III.
+   BATTERY SENSOR INFORMATION for more info.
      https://www.ticalc.org/archives/files/fileinfo/388/38883.html
 
 
@@ -150,11 +150,24 @@ Also, permission to use batteryb was given to me specially by the author. See
 IV. DATA STORAGE FORMAT
 
 The only "file" that's used by the program to store battery cycle data is a list
-of strings at `mem\batt`. Each string is formatted as such:
+of strings at `mem\batt`. Each element is a "record", and each record has two
+components: the date, and the time. Each record is formatted as such:
  "MM/DD/YY @ [H]H:MM [AM/PM]"
    - "MM/DD/YY" is the basic date format that the calculator will return from
-     the getDtStr(1)` function.
-   - "[H]H" is the hou om
+     the getDtStr(1)` function. Single-digit numbers are padded with 0s.
+   - "[H]H" is the hour component of the time. This can be either 1 or 2 digits
+     long depending on the time of day.
+   - "MM [AM/PM]" should be self-explanatory, they're the other human-readable
+     parts of the time component of the record.
+
+The time component of each record is never used in processing, it's just
+recorded. So, it's stored in a very human-readable fashion and essentially
+printed onto applicable dialogs without any processing.
+
+The date components are processed thoroughly while preparing data for
+visualization. This is the most important part of each record.
+
+`dim(mem\batt)` = the total # of recorded cycles.
 
 
 V. CHANGELOG
