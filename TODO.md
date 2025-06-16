@@ -5,11 +5,9 @@ NOTE: if a program listed below is not included in the AMS++ repository, it has 
  - [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations
  - [ ] 2: Configure Graph + Styling
    - [ ] user stores x-graphs as x1-99, implicits as imp1-99
- - [ ] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
+ - [X] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
    - [X] Hit Enter automatically after paste?
    - [X] Bottom of the menu can be just good old round(
-   - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
-   - [ ] Make it work on sci notation
  - [X] 4: DEG/RAD/GRAD, NORM/SCI/ENG quick switcher (kbdprgm4.89p)
  - [X] 5: custom zoom box - aspect ratio maintaining (quickzoom)
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera (spinner)
