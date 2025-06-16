@@ -8,7 +8,7 @@
    - [X] Bottom of the menu can be just good old round(
    - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
    - [ ] Make it work on sci notation
- - [ ] 4: "manual" Git-like snapshot manager
+ - [X] 4: DEG/RAD/GRAD, NORM/SCI/ENG quick switcher
  - [X] 5: custom zoom box - aspect ratio maintaining
    - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
      - [X] Add a status bar message showing current angle value
@@ -22,7 +22,7 @@
    - [X] Allow saving/recalling grid line spacing alongside range variables
  - [X] 6: Quick Insert
  - [ ] 7: a better Units dialog
- - [ ] 8: FormulaOne (formula storage and recallation toolbox)
+ - [X] 8: Screenshot
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
    - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
