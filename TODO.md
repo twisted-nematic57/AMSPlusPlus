@@ -1,3 +1,5 @@
+NOTE: if a program listed below is not included in the AMS++ repository, it has been left out for legal or practical reasons.
+
 # kbdprgms
 
  - [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations
@@ -8,9 +10,9 @@
    - [X] Bottom of the menu can be just good old round(
    - [ ] Handle sigfigs - make submenu that rounds to specific # of sigfigs
    - [ ] Make it work on sci notation
- - [X] 4: DEG/RAD/GRAD, NORM/SCI/ENG quick switcher
- - [X] 5: custom zoom box - aspect ratio maintaining
-   - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera
+ - [X] 4: DEG/RAD/GRAD, NORM/SCI/ENG quick switcher (kbdprgm4.89p)
+ - [X] 5: custom zoom box - aspect ratio maintaining (quickzoom)
+   - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera (spinner)
      - [X] Add a status bar message showing current angle value
      - [X] Let the user type in a different value?
      - [X] Add more exit keys - CLEAR, HOME(also does DispHome)
@@ -22,10 +24,10 @@
    - [X] Allow saving/recalling grid line spacing alongside range variables
  - [X] 6: Quick Insert
  - [ ] 7: a better Units dialog
- - [X] 8: Screenshot
+ - [X] 8: Screenshot (scrcap)
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
-   - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done)
+   - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done) (battcycl)
      - [X] Show current battery level
      - [X] Optimize list appending
      - [X] Show the raw battery level reading on-dialog
@@ -34,7 +36,7 @@
      - [X] Make it possible to store the data after exiting (STO key)
      - [X] Show "PAUSE" in the status line when visualizing data
      - [X] write documentation for the list data format
-   - [X] 68K clock frequency measurement utility
+   - [X] 68K clock frequency measurement utility (ti68k-clkfreq)
      - [X] make it possible to use it programmatically by setting/getting variables
      - [X] use built in 68K BASIC functions to keep track of time, you fool!!
      - [X] Optimize time-tracking routine locations
@@ -51,7 +53,7 @@
      - [X] load AMS Extender, PreOS, etc. RCL the GDB and load the zooms. Set contrast. Yadda yadda.
      - [X] Date/time setting utility
        - [X] at the end, display the time until user presses any key to exit
-   - [X] neofetch clone
+   - [X] neofetch clone (neofetch68k)
      - [X] remove dependency on padstr
 
 # direct AMS extensions
