@@ -1,0 +1,8 @@
+γGRAPH
+ * grid: renders grid, tickmarks, and tickmark labels
+    - rectangular
+    - polar (?)
+ * yfunct: renders standard "y=" equations
+    - discontinuity detection!!!
+ * xfunct: same as yfunct but "x=" eqns instead
+ * 
