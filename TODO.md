@@ -21,7 +21,7 @@ NOTE: if a program listed below is not included in the AMS++ repository, it has 
    - [X] If the window position hasn't changed at all, don't make the calculator re-render the graph
    - [X] Allow saving/recalling grid line spacing alongside range variables
  - [X] 6: Quick Insert
- - [ ] 7: a better Units dialog
+ - [ ] 7: Equation Library (inspiration: p.385 on the tiplist)
  - [X] 8: Screenshot (scrcap)
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
@@ -55,7 +55,8 @@ NOTE: if a program listed below is not included in the AMS++ repository, it has 
      - [X] remove dependency on padstr
 
 # direct AMS extensions
- - [ ] Custom units
+ - [ ] Custom menu: units!!
+   - [ ] WIP: see https://docs.google.com/document/d/1BjRCRQLR9LGWiF32Bfpj9iFXf62vC3rSQeOkaJntx44/edit?usp=sharing
 
 # misc
  - [X] sendkey: press a key from a BASIC program
