@@ -1,6 +1,6 @@
-/*** Battery Cycle Tracker 1.3 ************************************************\
+/*** Battery Cycle Tracker 1.3.1 **********************************************\
  * Author:         twisted_nematic57                                          *
- * Date:           06/14/2025 [MM-DD-YYYY]                                    *
+ * Date:           06/19/2025 [MM-DD-YYYY]                                    *
  * Special Thanks: Val Trubachev (vetruvet@gmail.com)                         *
  * License:        Public Domain (except when otherwise stated)               *
  * Product Type:   BASIC program                                              *
@@ -171,6 +171,10 @@ visualization. This is the most important part of each record.
 
 
 V. CHANGELOG
+
+ * Battery Cycle Tracker v1.3.1: variable optimizations and improvements
+    - CODE: remove `battst` global variable after exit
+    - CODE: remove `rawbatt` local variable (never used in the code??)
 
  * Battery Cycle Tracker v1.3: some documentation additions and bug fixes
     - CODE: make getDtStr() always return MM/DD/YY (bugfix for those who use
