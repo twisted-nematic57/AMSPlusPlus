@@ -1,9 +1,11 @@
-NOTE: if a program listed below is not included in the AMS++ repository, it has been left out for legal or practical reasons.
+NOTE: if a program listed below is not included in the AMS++ repository, it has been left out for legal or practical reasons. Reach out to me personally if you want access to something that's listed below but isn't in the repository. Stuff that's marked [NEVER FINISHED] either is completely unfinished or has a very very rough prototype that won't be usable for real-world tasks. Or it's been lost to the sands of time. Lol.
 
 # kbdprgms
 
- - [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations
- - [ ] 2: Configure Graph + Styling
+ - [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations [NEVER FINISHED]
+   - [X] Naive implicit grapher
+   - [ ] The rest of the planned graphing program (it was gonna be *big*, feature grayscale and whatnot, but I eventually got overwhelmed as I hit the limits of the platform I was developing for and lost interest)
+ - [ ] 2: Configure Graph + Styling [NEVER FINISHED] - (A component of the above)
    - [ ] user stores x-graphs as x1-99, implicits as imp1-99
  - [X] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
    - [X] Hit Enter automatically after paste?
@@ -21,7 +23,7 @@ NOTE: if a program listed below is not included in the AMS++ repository, it has 
    - [X] If the window position hasn't changed at all, don't make the calculator re-render the graph
    - [X] Allow saving/recalling grid line spacing alongside range variables
  - [X] 6: Quick Insert
- - [ ] 7: Equation Library (inspiration: p.385 on the tiplist)
+ - [ ] 7: Equation Library (inspiration: p.385 on the tiplist) [NEVER FINISHED]
  - [X] 8: Screenshot (scrcap)
  - [X] 9: misc programs
    - [X] RAM "defragmenter" (manually scrolls through history and then back)
@@ -55,8 +57,9 @@ NOTE: if a program listed below is not included in the AMS++ repository, it has 
      - [X] remove dependency on padstr
 
 # direct AMS extensions
- - [ ] Custom menu: units!!
+ - [ ] Custom menu: units!! [NEVER FINISHED]
    - [ ] WIP: see https://docs.google.com/document/d/1BjRCRQLR9LGWiF32Bfpj9iFXf62vC3rSQeOkaJntx44/edit?usp=sharing
+   - [X] Finished binary data units; didn't finish anything else.
 
 # misc
  - [X] sendkey: press a key from a BASIC program

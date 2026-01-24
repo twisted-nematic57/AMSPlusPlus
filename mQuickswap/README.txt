@@ -1,4 +1,4 @@
-Documentation for mQuickswap is gonna be a little halfassed because of how dead
+Documentation for mQuickswap is gonna be a little cut-down because of how dead
 simple it is.
 
 If you've installed a few of the numerous other programs in this repository, it
@@ -15,3 +15,6 @@ Just put "kbdprgm4.89p" on your calc in the `main` folder and ensure it's
 accessible via the [DIAMOND]+[4] shortcut. You can remap it if you'd like.
 
 Really simple to use, super self-explanatory UI.
+
+CHANGELOG: Added complex number mode switching in v1.1. Everything else was
+already there in v1.0.
