@@ -1,8 +1,9 @@
 NOTE: if a program listed below is not included in the AMS++ repository, it has been left out for legal or practical reasons. Reach out to me personally if you want access to something that's listed below but isn't in the repository. Stuff that's marked [NEVER FINISHED] either is completely unfinished or has a very very rough prototype that won't be usable for real-world tasks. Or it's been lost to the sands of time. Lol.
 
 # To-Do #2 (I am so organized!)
- - [ ] Fix Quickzoom README Line 87-92: you don't have to do that to delete a zoom slot anymore.
- - [ ] Same above but line 116-123: off-by-one display sizes are mentioned!
+ - [ ] Update & modernize Quickzoom (why wasn't this released earlier hello?)
+     - [ ] Fix Quickzoom README Line 87-92: you don't have to do that to delete a zoom slot anymore.
+     - [ ] Same above but line 116-123: off-by-one display sizes are mentioned!
  - [ ] Finish implicit graphing program and release it (Should gradients be applied or...?)
 
 # kbdprgms
