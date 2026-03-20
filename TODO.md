@@ -5,6 +5,11 @@ NOTE: if a program listed below is not included in the AMS++ repository, it has 
      - [ ] Fix Quickzoom README Line 87-92: you don't have to do that to delete a zoom slot anymore.
      - [ ] Same above but line 116-123: off-by-one display sizes are mentioned!
  - [ ] Finish implicit graphing program and release it (Should gradients be applied or...?)
+ - [ ] Modernize CycleGen and CycleView status line messages
+ - [ ] Add pause/resume support to CycleGen
+ - [ ] Add pause/resume support to Implicit
+ - [ ] Improve battcycl data storage efficiency
+ - [ ] Use LLM to detect any contradictions within this repo
 
 # kbdprgms
 
