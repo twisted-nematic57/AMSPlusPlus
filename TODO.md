@@ -5,11 +5,17 @@ NOTE: if a program listed below is not included in the AMS++ repository, it has 
      - [ ] Fix Quickzoom README Line 87-92: you don't have to do that to delete a zoom slot anymore.
      - [ ] Same above but line 116-123: off-by-one display sizes are mentioned!
  - [ ] Finish implicit graphing program and release it (Should gradients be applied or...?)
+	 - [ ] Fix slight off-by-one-half errors: x/ymin,x/ymax refer to the centers of the pixels at the borders of the screen, not the absolute extreme edges!
  - [ ] Modernize CycleGen and CycleView status line messages
  - [ ] Add pause/resume support to CycleGen
  - [ ] Add pause/resume support to Implicit
  - [ ] Improve battcycl data storage efficiency
  - [ ] Use LLM to detect any contradictions within this repo
+ - [ ] Remove questionable distribution in battcycl (tell user to download it themselves)
+ - [ ] ti68k-clkfreq stuff
+     - [ ] Lose the "ti68k-"
+	 - [ ] Fix typo in AUTOMATION section ("an" instead of "can")
+	 - [ ] Clarify equation meaning & copyright concerns
 
 # kbdprgms
 
