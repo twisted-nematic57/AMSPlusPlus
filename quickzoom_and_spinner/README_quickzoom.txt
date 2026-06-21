@@ -1,6 +1,6 @@
-/*** Quickzoom 1.1 ************************************************************\
+/*** Quickzoom 1.2 ************************************************************\
  * Author:         twisted_nematic57                                          *
- * Date:           06/11/2025 [MM-DD-YYYY]                                    *
+ * Date:           04/30/2026 [MM-DD-YYYY]                                    *
  * License:        Public Domain                                              *
  * Product Type:   Hybrid BASIC/ASM program                                   *
  * Platform:       TI-89 Titanium - can be ported to other Motorola 68000     *
@@ -28,14 +28,13 @@ methods are:
 I. INSTALLATION
 
 Send quiczoom.89p to your calculator. Keep it in the `misc` folder, and keep it
-archived. (The "k" is gone because I like keeping variable and filenames
-consistent + variable names are limited to 8 chars.)
+archived.
 
 Then send statline.89z from the "_deps" directory. It should be in the `misc`
 folder on-calc, and should be archived.
 
  * statline is a public domain C program by me that enables BASIC programs to
-   manipulate the status line.
+   efficiently manipulate the status line.
    https://www.cemetech.net/downloads/files/2600/x3320
 
 There's another dependency you'll have to download yourself, called Flib 3.2:
@@ -53,7 +52,9 @@ GPL-licensed, which I think is a bit overkill for a simple calculator program.
 II. USAGE
 
 It's recommended to launch Quickzoom as a keyboard program. (The included file
-`kbdprgm5.89p` integrates Spinner and Quickzoom into a single shortcut.)
+`kbdprgm5.89p` integrates Spinner and Quickzoom into a single shortcut: Spinner
+will only be launched if the current graphing mode is 3D, else it will launch
+Quickzoom, which only works on 2D graphs.)
 
 The first time you launch Quickzoom, you'll get a prompt to create a new folder.
 Press [ENTER] when it comes up.
@@ -70,66 +71,70 @@ box".
 
  * Press the [+]/[-] arrow keys to increase/decrease the box's size.
     - Using [2ND] + [+]/[-] will change the box's size in finer steps.
-
- * Pressing [0] will revert the graph window to the last confirmed zoom from
-   Quickzoom (not the OS's ZoomPrev).
-
- * Pressing [1] will resize the box back to its original dimensions, perfectly
-   lining up with the edges & corners of the current viewing window.
-
- * Pressing [STO>] will bring up a menu which lets you save the currently active
-   viewing window (not the draggable box!) to a "zoom slot"/"zoom".
-    - Pressing [2ND] + [RCL] will let you switch back to/recall any of these
-      zooming slots, provided that something was saved to them earlier.
-    - Currently populated zoom slots will be marked with a diamond. Zoom slots
-      can be overwritten if you choose.
-    - Pressing [BACKSPACE] will clear all zoom slots.
-    - If you want to delete a specific zoom slot, you can execute this command
-      on the Home Screen, where `x` = the zoom slot number:
-        newMat(1,6) -> ωprgmvrs\zooms[x]
-      This command basically resets an entire row to 0s, which will make the
-      program consider the slot as blank.
-      (The "->" is an STO symbol and the "ω" is a Greek lowercase omega)
-
- * Pressing [2ND] + [INS] will let you restore default zoom slots. This
-   functionality lets you instantly populate an entire group of zoom slots to
-   ones you've predefined - this could be useful if you find yourself using a
-   certain window configuration very often.
-    - The backup zoom slots matrix is to be located at `ωprgmvrs\zoomsbak`.
-    - To create a backup matrix, just populate as many zoom slots as you wish,
-      and copy `ωprgmvrs\zooms` to `ωprgmvrs\zoomsbak`, and archive the copy.
-    - Note that your previous zoom (row 10) will also be stored in the backup
-      matrix. So, when you restore default zoom slots, even your previous zoom
-      will be overwritten with whatever is in row 10 of the backup matrix.
-    - This action cannot be undone, and will overwrite all current zoom slots
-      to exactly the content of the backup matrix, even if some slots are blank.
-      If you want to hold onto your zoom slots, just back them up somewhere and
-      manually shift them in/out of `ωprgmvrs\zooms` from the Home Screen.
-
- * Pressing [ENTER] will change the active viewing window to the position of the
-   zoom box.
+	
+ * To confirm that you want to change your viewing window to the region selected
+   with the zoom box, just press [ENTER]!
 
  * Pressing [ESC]/[CLEAR] will exit Quickzoom and keep the Graph Screen visible.
    Pressing [HOME] will exit the program and return the calc to the Home Screen.
 
+ * Pressing [0] will revert the graph window to the last confirmed zoom from
+   Quickzoom. (Please note that the OS's built in ZoomPrev token is entirely
+   unrelated to Quickzoom's functionality, and for the best experience you
+   should only use Quickzoom's.)
+
+ * Pressing [1] will resize the box back to its original dimensions, perfectly
+   lining it up with the edges & corners of the current viewing window.
+
+ * Pressing [STO>] will bring up a menu which lets you save the currently active
+   viewing window (not the zoom box!) to a "zoom slot".
+    - Pressing [2ND] + [RCL] will let you switch back to/recall any of these
+      zoom slots, provided that something was saved to them earlier.
+    - Currently populated zoom slots will be marked with a diamond. Zoom slots
+      can be overwritten if you choose. There will be no request for
+	    confirmation if you choose to overwrite a zoom slot.
+	  
+ * Pressing [BACKSPACE] will let you clear any zoom slot. The bottom of the menu
+   has an extra option that lets you clear all slots. There is no confirmation
+   for anything after you press Enter on this menu, so be careful!
+
+ * Pressing [2ND] + [INS] will let you restore the backed up zoom slots. This
+   functionality lets you instantly populate the entire group of zoom slots to
+   ones you've predefined - this could be useful if you find yourself using a
+   certain window configuration very often.
+    - The backup zoom slots matrix is to be located at `ωprgmvrs\zoomsbak`. (The
+	  first character is a Greek lowercase omega.)
+    - To create a backup matrix, just populate as many zoom slots as you wish,
+      copy `ωprgmvrs\zooms` to `ωprgmvrs\zoomsbak`, and archive the `bak` one.
+    - Note that your previous zoom (row 10 of the matrix) will also be stored in
+      the backup matrix. So, when you restore default zoom slots, even your
+      previous zoom will be overwritten with whatever is in row 10 of the backup
+	  matrix.
+    - This action cannot be undone: restoring the zoom slot backup will
+	    overwrite all of your current zoom slots, and the data that was in them
+	    before restoration will not be saved.
+    - Confirmation for restoring backup zooms will not be requested. Be careful!
+
 NOTE: this program was not explicitly designed to be used with zoom windows with
-sizes other than 158x76px, which is the size used on TI-89s in full screen
-graphing mode. It's not meant to be used in split-screen modes. However,
-Quickzoom seems to work mostly fine anyways on different screen sizes, so it may
-not be a huge problem.
+sizes other than 159x77px, which is the size of the graph screen active region
+on TI-89s in full screen graphing mode. It's also not meant to be used in split-
+screen modes. However, Quickzoom seems to work mostly fine anyways on different
+screen sizes, so it may not be a huge problem.
 
 If you want to use this on a TI-92/Voyage 200, just open the program with the
-Program Editor and replace the first two "158"s to your viewing window's width
-in pixels, and the first two "76"es to its height in pixels.
+Program Editor and replace the first two "159"s to your viewing window's width
+in pixels, and the first two "77"s to its height in pixels.
 
 
 III. DATA STORAGE FORMAT
 
-All the zoom slots and the previous zoom window data is stored in a 6x10 matrix,
+All the zoom slots and the previous zoom window data is stored in a 10x6 matrix,
 `zooms`, in a folder called `ωprgmvrs`. It takes up 624 bytes of memory when
 fully populated, and 192 bytes when empty. (It shouldn't be archived since it's
 modified every time you confirm a new zooming window in Quickzoom, and takes so
-little space anyway.)
+little space anyway. The backup matrix, however, should be archived, because it
+is assumed that you won't change those often and want them to be available after
+a reboot.)
 
 Each column is responsible for storing each of the following data items, in this
 order left-to-right: {xmin,xmax,ymin,ymax,xscl,yscl}. Rows 1-9 are each of the
@@ -144,6 +149,14 @@ the backup zooms matrix.
 
 
 IV. CHANGELOG (LATEST-FIRST)
+
+ * Quickzoom 1.2: modernization, maintenance & cleanup
+	- ALL: Remove various off-by-one soft errors
+    - CODE: Remove confirmation dialog for restoring backup zooms
+	- CODE: Clarify some wording in dialog titles
+	- CODE: Improve status bar messages
+	- DOC: Mention enhanced slot clearing functionality
+	
 
  * Quickzoom 1.1: add another convenience feature
     - CODE: implement backup zoom restoration

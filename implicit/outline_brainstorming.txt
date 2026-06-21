@@ -1,0 +1,156 @@
+NOTE: This document shows some general pseudocode I wrote before actually writing the program.
+      It may not always be accurate, and it didn't need to be because I was there when it was written.
+	  Consult the actual source code for truths on how the program works.
+
+--------
+
+Args: input function as a string [f].
+
+newList(160)->lastRow
+newList(160)->thisRow
+0-> p1,p2,p3,p4
+xmin -> x
+ymax -> y
+
+[ Pixel layout: ]
+[[ *p1------*p2
+	|        |
+	|        |
+	|        |
+   *p3------*p4 ]]
+
+[ Calculate first row of points at ymax to set up for the main loop ]
+PxlHorz 0,-1
+For xp,0,158
+	f(x,y)>=0->lastRow(xp)
+EndFor
+
+For thetaY,1,76 // 1 (now in lastRow) was covered above.
+	PxlHorz thetaY,-1
+	
+	f(x,y)>=0 ->p3
+	p3->thisRow[1]
+	For thetaX,0,159 // Computes two waste points at thetaX=159 but I mean who cares??
+		lastRow[thetaX]->p1
+		lastRow[thetaX+1]->p2
+		f(x+deltaX,y)>=0 ->p4
+		p4->thisRow[thetaX+1]
+		
+		DEFINITION: Check for sign change across any same-axis adjacent points [
+		p1 <-> p2 ||
+		p3 <-> p4 ||
+		p1 <-> p3 ||
+		p2 <-> p4
+		] -> true: PxlChg this pixel.
+		
+		p4->p3
+		x+deltaX -> x
+	EndFor
+	
+	thisRow->lastRow
+	xmin -> x
+	y-deltaY -> y
+	PxlHorz thetaY-1,-1
+EndFor
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------- OLD ALGO (dev\imp12) BELOW: Precomputed the entire matrix first and then started setting pixels. That isn't strictly necessary + wastes a ton of compute and memory...
+
+[ left-to-right, top-to-bottom ]
+[ Point calculation: result: 78x5 (HxW) matrix; the rows are bitfields so 160 bits in each row for each row of points. ]
+
+[ Since the screen is inverted, de-invert it. ]
+for y in 0..=77 { 
+	PxlHorz y,-1
+}
+
+
+[ Pixel layout: ]
+[[ *p1------*p2
+	|        |
+	|        |
+	|        |
+   *p3------*p4 ]]
+
+[ From computed points, turn on pixels that are part of the function. ]
+[ left-to-right, top-to-bottom ]
+for y in 0..=76 { // Matrices index [1,77] + 78 for last row of pixels
+                  // x: Matrices index [1,159] + 160 for last column of pixels
+	DEFINITION: Check for sign change across any same-axis adjacent points [
+		p1 <-> p2 ||
+		p3 <-> p4 ||
+		p1 <-> p3 ||
+		p2 <-> p4
+	] -> true: Shade pixel. Else leave as-is.
+	   
+	[ NEW p-mappings that account for 4-byte boundaries: ]
+	For thetaI,1,5
+		For thetaII,0,30
+			p1 = gbit(pm[y+1,thetaI],thetaII)
+			p2 = gbit(pm[y+1,thetaI],thetaII+1)
+			p3 = gbit(pm[y+2,thetaI],thetaII)
+			p4 = gbit(pm[y+2,thetaI],thetaII+1)
+			
+			[ Check for sign changes ]
+		EndFor
+		
+		If thetaI<5 Then
+			p1 = gbit(pm[y+1,thetaI],31)
+			p2 = gbit(pm[y+1,thetaI+1],0)
+			p3 = gbit(pm[y+2,thetaI],31)
+			p4 = gbit(pm[y+2,thetaI+1],0)
+			
+			[ Check for sign changes ]
+		EndIf
+	EndFor
+}
+
+[ TODO: Try unwrapped loops for each of the 5 elements in each row to possibly improve performance at the expense of more RAM use by BASIC code. ]
+
+Benchmarks:
+ * Original w/PxlChg progress: 1200
+ * Original w/o PxlChg progress: 1056
+ * Improved using for giant loops w/ modulus calculations: 1123
+ * Improved using unwrapped for loops + progress reporting every row (160 points): 
+ 
+ 
+r0 contains original gbit calls. sbit calls should be easy enough to reproduce from scratch

@@ -1,104 +1,105 @@
 NOTE: if a program listed below is not included in the AMS++ repository, it has been left out for legal or practical reasons. Reach out to me personally if you want access to something that's listed below but isn't in the repository. Stuff that's marked [NEVER FINISHED] either is completely unfinished or has a very very rough prototype that won't be usable for real-world tasks. Or it's been lost to the sands of time. Lol.
 
 # To-Do #2 (I am so organized!)
- - [ ] Update & modernize Quickzoom (why wasn't this released earlier hello?)
-     - [ ] Fix Quickzoom README Line 87-92: you don't have to do that to delete a zoom slot anymore.
-     - [ ] Same above but line 116-123: off-by-one display sizes are mentioned!
- - [ ] Finish implicit graphing program and release it (Should gradients be applied or...?)
-	 - [ ] Fix slight off-by-one-half errors: x/ymin,x/ymax refer to the centers of the pixels at the borders of the screen, not the absolute extreme edges!
- - [ ] Modernize CycleGen and CycleView status line messages
- - [ ] Add pause/resume support to CycleGen
- - [ ] Add pause/resume support to Implicit
- - [ ] Improve battcycl data storage efficiency
- - [ ] Use LLM to detect any contradictions within this repo
- - [ ] Remove questionable distribution in battcycl (tell user to download it themselves)
- - [ ] ti68k-clkfreq stuff
-     - [ ] Lose the "ti68k-"
-	 - [ ] Fix typo in AUTOMATION section ("an" instead of "can")
-	 - [ ] Clarify equation meaning & copyright concerns
+
+- [ ] Update & modernize Quickzoom (why wasn't this released earlier hello?)
+  - [X] Fix Quickzoom README Line 87-92: you don't have to do that to delete a zoom slot anymore.
+  - [X] Same above but line 116-123: off-by-one display sizes are mentioned!
+- [X] Finish implicit graphing program and release it (Should gradients be applied or...?)
+  - [X] Fix slight off-by-one-half errors: x/ymin,x/ymax refer to the centers of the pixels at the borders of the screen, not the absolute extreme edges!
+- [ ] Modernize CycleGen and CycleView status line messages
+- [X] Add pause/resume support to Implicit
+- [ ] Use LLM to detect any contradictions within this repo
+- [ ] Remove questionable distribution in battcycl (tell user to download it themselves)
+- [ ] ti68k-clkfreq stuff
+  - [ ] Lose the "ti68k-"
+  - [ ] Fix typo in AUTOMATION section ("an" instead of "can")
+  - [ ] Clarify equation meaning & copyright concerns
 
 # kbdprgms
 
- - [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations [NEVER FINISHED]
-   - [X] Naive implicit grapher
-   - [ ] The rest of the planned graphing program (it was gonna be *big*, feature grayscale and whatnot, but I eventually got overwhelmed as I hit the limits of the platform I was developing for and lost interest)
- - [ ] 2: Configure Graph + Styling [NEVER FINISHED] - (A component of the above)
-   - [ ] user stores x-graphs as x1-99, implicits as imp1-99
- - [X] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
-   - [X] Hit Enter automatically after paste?
-   - [X] Bottom of the menu can be just good old round(
- - [X] 4: DEG/RAD/GRAD, NORM/SCI/ENG quick switcher (kbdprgm4.89p)
- - [X] 5: custom zoom box - aspect ratio maintaining (quickzoom)
-   - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera (spinner)
-     - [X] Add a status bar message showing current angle value
-     - [X] Let the user type in a different value?
-     - [X] Add more exit keys - CLEAR, HOME(also does DispHome)
-       - [X] Implemented this for the 2D program as well
-   - [X] For zooming, make the amplification first-priority and move finer controls to the 2nd buttons
-   - [X] Make it possible to store/recall multiple zoom positions.
-   - [X] Put a "diamond" next to slots that are already populated
-   - [X] If the window position hasn't changed at all, don't make the calculator re-render the graph
-   - [X] Allow saving/recalling grid line spacing alongside range variables
- - [X] 6: Quick Insert
- - [ ] 7: Equation Library (inspiration: p.385 on the tiplist) [NEVER FINISHED]
- - [X] 8: Screenshot (scrcap)
- - [X] 9: misc programs
-   - [X] RAM "defragmenter" (manually scrolls through history and then back)
-   - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done) (battcycl)
-     - [X] Show current battery level
-     - [X] Optimize list appending
-     - [X] Show the raw battery level reading on-dialog
-     - [X] Remove unnecessary intro at the top
-     - [X] Make a tool that shows the total number of cycles in a "mountain" graph
-     - [X] Make it possible to store the data after exiting (STO key)
-     - [X] Show "PAUSE" in the status line when visualizing data
-     - [X] write documentation for the list data format
-   - [X] 68K clock frequency measurement utility (ti68k-clkfreq)
-     - [X] make it possible to use it programmatically by setting/getting variables
-     - [X] use built in 68K BASIC functions to keep track of time, you fool!!
-     - [X] Optimize time-tracking routine locations
-     - [X] Delete `automeas` after finishing if auto = true
-     - [X] Add a way to take a more precise measurement by using MathTool.timing()
-   - [X] DCLOCK wrapper
-     - [X] Make DCLOCK work in a different folder (ZCLOCK)
-     - [X] Make it not touch the modes at all (Use GDB)
-     - [X] Migrate away from Flib
-     - [X] Regular clock
-     - [X] Timer (dialog input)
-     - [X] Stopwatch
-   - [X] Initialization
-     - [X] load AMS Extender, PreOS, etc. RCL the GDB and load the zooms. Set contrast. Yadda yadda.
-     - [X] Date/time setting utility
-       - [X] at the end, display the time until user presses any key to exit
-   - [X] neofetch clone (neofetch68k)
-     - [X] remove dependency on padstr
+- [ ] 1: Draw tickmarks, shading, grayscale, dithering, implicit, x= equations [NEVER FINISHED]
+  - [X] Naive implicit grapher
+  - [ ] The rest of the planned graphing program (it was gonna be *big*, feature grayscale and whatnot, but I eventually got overwhelmed as I hit the limits of the platform I was developing for and lost interest)
+- [ ] 2: Configure Graph + Styling [NEVER FINISHED] - (A component of the above)
+  - [ ] user stores x-graphs as x1-99, implicits as imp1-99
+- [X] 3: Round ans(1) - numbers mean # of digits to round to; "A" = 0 digits
+  - [X] Hit Enter automatically after paste?
+  - [X] Bottom of the menu can be just good old round(
+- [X] 4: DEG/RAD/GRAD, NORM/SCI/ENG quick switcher (kbdprgm4.89p)
+- [X] 5: custom zoom box - aspect ratio maintaining (quickzoom)
+  - [X] If in 3D mode, make it easy to rotate the graph while not rotating the camera (spinner)
+    - [X] Add a status bar message showing current angle value
+    - [X] Let the user type in a different value?
+    - [X] Add more exit keys - CLEAR, HOME(also does DispHome)
+      - [X] Implemented this for the 2D program as well
+  - [X] For zooming, make the amplification first-priority and move finer controls to the 2nd buttons
+  - [X] Make it possible to store/recall multiple zoom positions.
+  - [X] Put a "diamond" next to slots that are already populated
+  - [X] If the window position hasn't changed at all, don't make the calculator re-render the graph
+  - [X] Allow saving/recalling grid line spacing alongside range variables
+- [X] 6: Quick Insert
+- [ ] 7: Equation Library (inspiration: p.385 on the tiplist) [NEVER FINISHED]
+- [X] 8: Screenshot (scrcap)
+- [X] 9: misc programs
+  - [X] RAM "defragmenter" (manually scrolls through history and then back)
+  - [X] Battery Cycle Tracker w/ datetime - perhaps to a list var? (dim(listname) = # of cycles done) (battcycl)
+    - [X] Show current battery level
+    - [X] Optimize list appending
+    - [X] Show the raw battery level reading on-dialog
+    - [X] Remove unnecessary intro at the top
+    - [X] Make a tool that shows the total number of cycles in a "mountain" graph
+    - [X] Make it possible to store the data after exiting (STO key)
+    - [X] Show "PAUSE" in the status line when visualizing data
+    - [X] write documentation for the list data format
+  - [X] 68K clock frequency measurement utility (ti68k-clkfreq)
+    - [X] make it possible to use it programmatically by setting/getting variables
+    - [X] use built in 68K BASIC functions to keep track of time, you fool!!
+    - [X] Optimize time-tracking routine locations
+    - [X] Delete `automeas` after finishing if auto = true
+    - [X] Add a way to take a more precise measurement by using MathTool.timing()
+  - [X] DCLOCK wrapper
+    - [X] Make DCLOCK work in a different folder (ZCLOCK)
+    - [X] Make it not touch the modes at all (Use GDB)
+    - [X] Migrate away from Flib
+    - [X] Regular clock
+    - [X] Timer (dialog input)
+    - [X] Stopwatch
+  - [X] Initialization
+    - [X] load AMS Extender, PreOS, etc. RCL the GDB and load the zooms. Set contrast. Yadda yadda.
+    - [X] Date/time setting utility
+      - [X] at the end, display the time until user presses any key to exit
+  - [X] neofetch clone (neofetch68k)
+    - [X] remove dependency on padstr
 
 # direct AMS extensions
- - [ ] Custom menu: units!! [NEVER FINISHED]
-   - [ ] WIP: see https://docs.google.com/document/d/1BjRCRQLR9LGWiF32Bfpj9iFXf62vC3rSQeOkaJntx44/edit?usp=sharing
-   - [X] Finished binary data units; didn't finish anything else.
+
+- [ ] Custom menu: units!! [NEVER FINISHED]
+  - [ ] WIP: see https://docs.google.com/document/d/1BjRCRQLR9LGWiF32Bfpj9iFXf62vC3rSQeOkaJntx44/edit?usp=sharing
+  - [X] Finished binary data units; didn't finish anything else.
 
 # misc
- - [X] sendkey: press a key from a BASIC program
-   - [X] ~~arrow keys + 2nd + diamond~~
-   - [X] ~~F1-F5 + Diamond F1~~
-   - [X] ~~Enter (13), Copy + Paste (24576/16648), Clear (263)~~
-   - [X] Translate this into a BASIC program with heavy input validation - thanks Zeroko!!
-   - [X] clear up the moveleft licensing stuff (refer to Sam's Cemetech post...)
- - [X] CycleGen, the animation software
-   - [X] fix undefined maxsteps w/fillmem issue
-   - [X] update/modernize (also CycleView and Clicker)
-   - [X] update version numbers, reformat comments if necessary
-   - [X] deter APD - introduce apdreset
-   - [X] a bunch of other changes - see changelog in the readme for more info
- - [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
-   - [X] improve performance in fastloop in Clicker
-   - [X] revise comments, keycode indications
-   - [X] Optimize list appending - don't use augment(
-   - [X] some other changes - see changelog in the readme for more info
- - [x] padstr(str,chr,n,dir): pad str to num chars with chr, direction changes the "side" to pad to
-   - [X] if dim(str) > n, returns original string truncated to n chars from dir?
-   - [X] remove unnecessary `Lbl finish` (DO THIS BEFORE RELEASING idbd!)
- - [X] idbd(d1,d2): recreation of Finance app's dbd( but works only on ISO8601
- - [X] dord({year,month,day}): get the integer ordinal day of the given date
-   - [X] Test with https://nsidc.org/data/user-resources/help-center/day-year-doy-calendar
+
+- [X] sendkey: press a key from a BASIC program
+  - [X] ~~arrow keys + 2nd + diamond~~
+  - [X] ~~F1-F5 + Diamond F1~~
+  - [X] ~~Enter (13), Copy + Paste (24576/16648), Clear (263)~~
+  - [X] Translate this into a BASIC program with heavy input validation - thanks Zeroko!!
+  - [X] clear up the moveleft licensing stuff (refer to Sam's Cemetech post...)
+- [X] CycleGen, the animation software
+  - [X] fix undefined maxsteps w/fillmem issue
+  - [X] update/modernize (also CycleView and Clicker)
+  - [X] update version numbers, reformat comments if necessary
+  - [X] deter APD - introduce apdreset
+  - [X] a bunch of other changes - see changelog in the readme for more info
+- [X] Clicker: when autocomputing, show iteration # in status bar, and show results on screen
+  - [X] improve performance in fastloop in Clicker
+  - [X] revise comments, keycode indications
+  - [X] Optimize list appending - don't use augment(
+  - [X] some other changes - see changelog in the readme for more info
+- [X] padstr(str,chr,n,dir): pad str to num chars with chr, direction changes the "side" to pad to
+  - [X] if dim(str) > n, returns original string truncated to n chars from dir?
+  - [X] remove unnecessary `Lbl finish` (DO THIS BEFORE RELEASING idbd!)
+- [X] idbd(d1,d2): recreation of Finance app's dbd( but works only on ISO8601
+- [X] dord({year,month,day}): get the integer ordinal day of the given date
+  - [X] Test with https://nsidc.org/data/user-resources/help-center/day-year-doy-calendar
