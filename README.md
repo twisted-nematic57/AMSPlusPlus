@@ -1,5 +1,7 @@
 # AMS++
 
+![implicit Demo - complicated e^(...) relation w/ many oscillations](implicit/implicit_demo.png)
+<img src="implicit/impl_rt_demo.gif" alt="impl_rt Demo - Rendering the Devil's Curve in 'realtime'" width="340"/>
 ![CycleGen Demo - smooth 3D graph rotation](_images/ccg0.gif)
 ![CycleGen Demo - 2D hyperbola/ellipse transformations](_images/ccg1.gif)
 ![Quickzoom Demo - Zooming into some trig functions](_images/quiczoom.gif)
@@ -8,6 +10,7 @@
 
 This is a collection of programs written in Motorola 68K assembly\*, C, and TI-BASIC that significantly extend the capabilities of the TI-89 Titanium (and to some extent, the entire TI-68K graphing calculator line). Here is a list of the programs in this package and their capabilities:
 
+* [**implicit/impl_rt:**](implicit) Render beautiful implicit relations in two variables using Marching Squares-based renderers
 * [**CycleGen/CycleView:**](ccg_and_ccv) Generate and play back monochrome animations of graphs
 * [**Clicker:**](clicker) An interactive recursive function executor (e.g, can be used to iterate points of the Mandelbrot Set.)
 * [**Quickzoom/Spinner:**](quickzoom_and_spinner) Some highly intuitive and useful programs that make it easier to navigate various 2D and 3D graphs
